@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Properties of Soil - Interactive Lesson</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-container {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .fun-fact {
+            background-color: #e6f3ff;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin: 10px 0;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f7f0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌱 Amazing World of Soil: Interactive Lesson 🌱</h1>
+
+    <div class="fun-fact">
+        <h3>🔬 Amazing Fact!</h3>
+        <p>Did you know? One tablespoon of soil contains more living organisms than there are people on Earth!</p>
+    </div>
+
+    <div class="question-container">
+        <h3>Question 1: Components of Soil</h3>
+        <p>What are the five main components that make up soil?</p>
+        <button onclick="toggleAnswer('answer1')">Show Answer</button>
+        <div id="answer1" class="answer">
+            Soil is made up of:
+            <ol>
+                <li>Water</li>
+                <li>Air</li>
+                <li>Weathered rocks</li>
+                <li>Organic material</li>
+                <li>Living organisms</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h3>Question 2: Soil Classification</h3>
+        <p>What are the four main properties used to classify soil?</p>
+        <button onclick="toggleAnswer('answer2')">Show Answer</button>
+        <div id="answer2" class="answer">
+            Soil is classified according to:
+            <ul>
+                <li>Color</li>
+                <li>Texture</li>
+                <li>Particle size</li>
+                <li>Water absorption ability</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h3>Question 3: Soil Color</h3>
+        <p>What does the color of soil tell us about its organic matter content?</p>
+        <button onclick="toggleAnswer('answer3')">Show Answer</button>
+        <div id="answer3" class="answer">
+            <ul>
+                <li>Dark colored soil → Rich in organic matter</li>
+                <li>Light colored soil → Less organic matter</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h3>Question 4: Particle Sizes</h3>
+        <p>Arrange these soil components from largest to smallest particle size:</p>
+        <p>Clay, Silt, Gravel, Sand</p>
+        <button onclick="toggleAnswer('answer4')">Show Answer</button>
+        <div id="answer4" class="answer">
+            From largest to smallest:
+            <ol>
+                <li>Gravel</li>
+                <li>Sand</li>
+                <li>Silt</li>
+                <li>Clay</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h3>Question 5: Water Retention</h3>
+        <p>How does particle size affect water retention in soil?</p>
+        <button onclick="toggleAnswer('answer5')">Show Answer</button>
+        <div id="answer5" class="answer">
+            <ul>
+                <li>Large particles (like gravel and sand):
+                    <ul>
+                        <li>Allow water to flow through easily</li>
+                        <li>Retain very little water</li>
+                    </ul>
+                </li>
+                <li>Small particles (like clay):
+                    <ul>
+                        <li>Have larger surface area</li>
+                        <li>Resist water flow</li>
+                        <li>Retain more water</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <h3>Question 6: Topsoil</h3>
+        <p>Why is topsoil ideal for plant growth?</p>
+        <button onclick="toggleAnswer('answer6')">Show Answer</button>
+        <div id="answer6" class="answer">
+            Topsoil is ideal because:
+            <ul>
+                <li>Contains a mixture of different-sized particles</li>
+                <li>Retains just the right amount of water</li>
+                <li>Creates a nutrient-rich environment</li>
+                <li>Provides optimal conditions for plant growth</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
