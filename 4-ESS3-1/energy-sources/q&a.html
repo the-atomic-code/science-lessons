@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Amazing World of Energy Sources</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f7ff;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content {
+    max-width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    color: #1a5f7a;
+    text-align: center;
+    padding: 25px 0;
+    background: linear-gradient(to right, #ffffff, #e1f5fe, #ffffff);
+    margin: 0;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1a5f7a;
+    margin-top: 30px;
+    padding: 15px 0;
+    border-bottom: 3px solid #4fc3f7;
+    font-size: 1.8em;
+    background: linear-gradient(to right, #ffffff, #f5f9ff);
+}
+
+.question {
+    background: linear-gradient(to right, #2196f3, #1976d2);
+    color: white;
+    padding: 20px;
+    margin: 25px 0 10px 0;
+    font-size: 1.2em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.answer {
+    background-color: white;
+    padding: 20px;
+    margin: 5px 0 20px 0;
+    display: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    border-left: 5px solid #4fc3f7;
+    font-size: 1.1em;
+}
+
+.fun-fact {
+    background: linear-gradient(to right, #ffd54f, #ffb300);
+    padding: 20px;
+    margin: 25px 0;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.fun-fact::before {
+    content: '💡';
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.toggle-btn {
+    background: linear-gradient(to right, #4caf50, #388e3c);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+ul {
+    padding-left: 25px;
+    margin: 15px 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #444;
+    position: relative;
+}
+
+li::before {
+    content: '•';
+    color: #2196f3;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        padding: 15px 0;
+    }
+    
+    .question {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+    
+    .answer, .fun-fact {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+
+.section-divider {
+    height: 3px;
+    background: linear-gradient(to right, transparent, #4fc3f7, transparent);
+    margin: 40px 0;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<h1>🌟 The Amazing World of Energy Sources 🌟</h1>
+
+<div class="fun-fact">
+Fun Fact: The word "energy" comes from the ancient Greek word "Energia," coined by Aristotle in 384 BC!
+</div>
+
+<h2>Basic Energy Concepts</h2>
+
+<div class="question">Q1: What is energy in its classical definition?</div>
+<button class="toggle-btn" onclick="toggleAnswer(1)">Show Answer</button>
+<div class="answer" id="answer1">Energy is the ability to do work.</div>
+
+<div class="question">Q2: What is the law of conservation of energy?</div>
+<button class="toggle-btn" onclick="toggleAnswer(2)">Show Answer</button>
+<div class="answer" id="answer2">Energy can neither be created nor destroyed. It can only be transformed from one form to another. The total energy in an isolated system (like the universe) remains constant.</div>
+
+<h2>Types of Energy Sources</h2>
+
+<div class="question">Q3: What are the two main classifications of energy sources?</div>
+<button class="toggle-btn" onclick="toggleAnswer(3)">Show Answer</button>
+<div class="answer" id="answer3">Energy sources are classified into:
+<ul>
+<li>Renewable sources</li>
+<li>Non-renewable sources</li>
+</ul>
+</div>
+
+<div class="question">Q4: What defines renewable energy sources?</div>
+<button class="toggle-btn" onclick="toggleAnswer(4)">Show Answer</button>
+<div class="answer" id="answer4">Renewable energy sources:
+<ul>
+<li>Are natural resources that cause minimal environmental impact</li>
+<li>Are available in abundance in nature</li>
+<li>Can be naturally refilled</li>
+<li>Are sustainable and environmentally safe</li>
+</ul>
+</div>
+
+<div class="question">Q5: List all the renewable energy sources mentioned in the video.</div>
+<button class="toggle-btn" onclick="toggleAnswer(5)">Show Answer</button>
+<div class="answer" id="answer5">
+<ul>
+<li>Solar energy</li>
+<li>Wind energy</li>
+<li>Biomass</li>
+<li>Geothermal energy</li>
+<li>Hydropower energy</li>
+</ul>
+</div>
+
+<div class="question">Q6: How is solar energy utilized?</div>
+<button class="toggle-btn" onclick="toggleAnswer(6)">Show Answer</button>
+<div class="answer" id="answer6">Solar energy can be used in two main ways:
+<ul>
+<li>Converted into electrical energy using solar panels</li>
+<li>Converted into thermal energy for heating homes and water</li>
+</ul>
+</div>
+
+<div class="question">Q7: How is wind energy harnessed?</div>
+<button class="toggle-btn" onclick="toggleAnswer(7)">Show Answer</button>
+<div class="answer" id="answer7">Wind energy is harnessed using wind turbines, which convert wind power into electricity that can power homes and schools.</div>
+
+<div class="question">Q8: What is biomass and what are its sources?</div>
+<button class="toggle-btn" onclick="toggleAnswer(8)">Show Answer</button>
+<div class="answer" id="answer8">Biomass is renewable organic matter that comes from:
+<ul>
+<li>Plants</li>
+<li>Animals</li>
+<li>Wood</li>
+<li>Crops</li>
+<li>Animal waste</li>
+</ul>
+These materials can be converted into fuel.</div>
+
+<div class="question">Q9: What is geothermal energy and how is it used?</div>
+<button class="toggle-btn" onclick="toggleAnswer(9)">Show Answer</button>
+<div class="answer" id="answer9">Geothermal energy comes from the heat inside the Earth. It can be used to:
+<ul>
+<li>Produce electricity</li>
+<li>Heat homes and buildings</li>
+<li>Provide hot water</li>
+</ul>
+</div>
+
+<div class="question">Q10: What are non-renewable energy sources and their examples?</div>
+<button class="toggle-btn" onclick="toggleAnswer(10)">Show Answer</button>
+<div class="answer" id="answer10">Non-renewable sources are those that can run out of supply over time. Examples include:
+<ul>
+<li>Natural gas</li>
+<li>Coal</li>
+<li>Petroleum</li>
+<li>Nuclear energy</li>
+<li>Hydrocarbon gas liquids</li>
+</ul>
+</div>
+
+<div class="question">Q11: Why should we limit our dependency on non-renewable energy sources?</div>
+<button class="toggle-btn" onclick="toggleAnswer(11)">Show Answer</button>
+<div class="answer" id="answer11">We should limit non-renewable energy use because:
+<ul>
+<li>They can be exhausted</li>
+<li>They cause environmental pollution</li>
+<li>They contribute to carbon dioxide emissions</li>
+<li>They are not sustainable for the future</li>
+</ul>
+</div>
+
+<div class="question">Q12: What is hydropower and what makes it special?</div>
+<button class="toggle-btn" onclick="toggleAnswer(12)">Show Answer</button>
+<div class="answer" id="answer12">Hydropower:
+<ul>
+<li>Is energy generated from moving water</li>
+<li>Is one of the oldest renewable energy sources</li>
+<li>Is one of the largest sources of renewable energy</li>
+<li>Is abundantly available on Earth</li>
+</ul>
+</div>
+
+<div class="fun-fact">
+🌍 Think Green! By using renewable energy sources, you're helping to create a cleaner, safer planet for future generations!
+</div>
+</div>
+
+<script>
+function toggleAnswer(id) {
+    const answer = document.getElementById('answer' + id);
+    const button = event.target;
+    if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+        button.textContent = 'Hide Answer';
+        button.style.backgroundColor = '#e74c3c';
+    } else {
+        answer.style.display = 'none';
+        button.textContent = 'Show Answer';
+        button.style.backgroundColor = '#2ecc71';
+    }
+}
+</script>
+
+</body>
+</html>
