@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hurricane Survival Challenge: Test Your Storm Smarts!</title>
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.question {
+    background-color: #f0f8ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.answer {
+    background-color: #e6ffe6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
+<script>
+function toggleAnswer(id) {
+    var answer = document.getElementById(id);
+    if (answer.style.display === "" || answer.style.display === "none") {
+        answer.style.display = "block";
+    } else {
+        answer.style.display = "none";
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>🌀 Hurricane Survival Challenge: Test Your Storm Smarts! 🌀</h1>
+
+<div class="question">
+    <h3>Q1: What is a hurricane and how does it form?</h3>
+    <button onclick="toggleAnswer('a1')">Show Answer</button>
+    <div id="a1" class="answer">
+        A hurricane is a tropical storm that forms over warm ocean waters. It has a distinctive structure with storm clouds circling around a calm center called the eye.
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q2: What are the main hazards associated with hurricanes when they reach land?</h3>
+    <button onclick="toggleAnswer('a2')">Show Answer</button>
+    <div id="a2" class="answer">
+        The main hazards include:
+        • Storm surges (high waves)
+        • Flooding from heavy rain
+        • Strong winds
+        • Tornadoes
+        • Damage to buildings (broken windows and walls)
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q3: What's the difference between a hurricane watch and a hurricane warning?</h3>
+    <button onclick="toggleAnswer('a3')">Show Answer</button>
+    <div id="a3" class="answer">
+        • Hurricane Watch: A hurricane may arrive within 48 hours
+        • Hurricane Warning: A hurricane is likely within 36 hours
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q4: What should be included in a hurricane preparation checklist?</h3>
+    <button onclick="toggleAnswer('a4')">Show Answer</button>
+    <div id="a4" class="answer">
+        Essential items include:
+        • Window protection (shutters or boards)
+        • Securing outdoor items
+        • Emergency food and water supplies
+        • Battery-powered radio
+        • First aid kit
+        • Evacuation plan
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q5: What does "evacuate" mean and when should you do it?</h3>
+    <button onclick="toggleAnswer('a5')">Show Answer</button>
+    <div id="a5" class="answer">
+        Evacuation means leaving your home for safety. You should evacuate when:
+        • Officials give an evacuation order
+        • You live in a coastal or low-lying area
+        • You can go to a shelter or stay with friends in a safer location
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q6: If staying home during a hurricane, what's the safest place to be?</h3>
+    <button onclick="toggleAnswer('a6')">Show Answer</button>
+    <div id="a6" class="answer">
+        The safest place is a small interior room with no windows, such as a bathroom or closet, to avoid injury from flying glass and debris.
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q7: What precautions should you take regarding water after a hurricane?</h3>
+    <button onclick="toggleAnswer('a7')">Show Answer</button>
+    <div id="a7" class="answer">
+        • Don't drink tap water until authorities declare it safe
+        • Use stored water from emergency supplies
+        • Be aware that flooding can contaminate water sources
+        • Boil water if necessary and as instructed by officials
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q8: What should you do after a hurricane passes?</h3>
+    <button onclick="toggleAnswer('a8')">Show Answer</button>
+    <div id="a8" class="answer">
+        • Stay inside until officials say it's safe
+        • Watch for continued flooding
+        • Use stored supplies until services are restored
+        • Help clean up debris only when it's safe
+        • Follow official instructions
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q9: Why does a hurricane have an "eye"?</h3>
+    <button onclick="toggleAnswer('a9')">Show Answer</button>
+    <div id="a9" class="answer">
+        The eye is the calm center of the hurricane where air sinks. It's surrounded by the eyewall, which contains the storm's strongest winds and heaviest rainfall. This structure is essential to the hurricane's circulation pattern.
+    </div>
+</div>
+
+<div class="question">
+    <h3>Q10: How long can hurricane effects last?</h3>
+    <button onclick="toggleAnswer('a10')">Show Answer</button>
+    <div id="a10" class="answer">
+        Hurricane effects can last for:
+        • Several days of rain after the main storm
+        • Extended power outages
+        • Weeks of cleanup
+        • Long-term flooding in some areas
+    </div>
+</div>
+
+<p style="text-align: center; margin-top: 20px;">
+    For more detailed information about hurricane preparedness, visit <a href="http://www.FEMA.gov">www.FEMA.gov</a>
+</p>
+
+</body>
+</html>
