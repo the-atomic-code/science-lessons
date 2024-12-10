@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Amazing World of Density: Why Things Float or Sink!</title>
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    line-height: 1.6;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.question {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    margin: 25px 0 10px 0;
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.answer {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border-left: 5px solid #3498db;
+    border-radius: 0 8px 8px 0;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.fun-fact {
+    background-color: #f1c40f;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 8px;
+    color: #34495e;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.show-answer-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+.show-answer-btn:hover {
+    background-color: #27ae60;
+}
+</style>
+<script>
+function toggleAnswer(id) {
+    const answer = document.getElementById(id);
+    const button = document.querySelector(`button[onclick="toggleAnswer('${id}')"]`);
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        button.textContent = "Hide Answer";
+    } else {
+        answer.style.display = "none";
+        button.textContent = "Show Answer";
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>🌊 The Amazing World of Density: Why Things Float or Sink! 🪵</h1>
+
+<div class="fun-fact">
+<strong>Fun Fact:</strong> Did you know that a huge steel ship can float on water while a small steel nail sinks? Let's discover why through the magic of density!
+</div>
+
+<div class="question">Q1: What is density?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer1')">Show Answer</button>
+<div class="answer" id="answer1">Density is the measure of mass per unit volume of a substance. In simpler terms, it tells us how much matter is packed into a given space.</div>
+
+<div class="question">Q2: Why does a large log of wood float on water while a smaller rock sinks?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer2')">Show Answer</button>
+<div class="answer" id="answer2">
+• The log floats because it has less density than water (less mass per unit volume)<br>
+• The rock sinks because it has greater density than water (more mass per unit volume)
+</div>
+
+<div class="question">Q3: What makes a helium balloon rise in the air?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer3')">Show Answer</button>
+<div class="answer" id="answer3">A helium balloon rises because:
+<br>• Helium gas has less density than the surrounding air
+<br>• Objects with lower density rise above substances with higher density</div>
+
+<div class="question">Q4: Why does oil float on water? (There are two reasons!)</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer4')">Show Answer</button>
+<div class="answer" id="answer4">Oil floats on water because:
+<br>1. Oil has lower density than water
+<br>2. Oil and water are immiscible liquids (they don't mix together)</div>
+
+<div class="question">Q5: What happens when you try to mix oil and water?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer5')">Show Answer</button>
+<div class="answer" id="answer5">When you mix oil and water:
+<br>• They initially appear to mix when shaken
+<br>• They separate into two distinct layers when left undisturbed
+<br>• Oil forms the top layer (less dense)
+<br>• Water forms the bottom layer (more dense)</div>
+
+<div class="fun-fact">
+<strong>Think About It:</strong> If you had a cube of gold and a cube of aluminum of the same size, which would be heavier? Gold, because it has a higher density!
+</div>
+
+<div class="question">Q6: Can you arrange these substances in order of increasing density?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer6')">Show Answer</button>
+<div class="answer" id="answer6">From least dense to most dense:
+<br>• Helium gas
+<br>• Air
+<br>• Oil
+<br>• Water
+<br>• Rock</div>
+
+<div class="question">Q7: What would happen if you put these objects in water?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer7')">Show Answer</button>
+<div class="answer" id="answer7">
+• Cork (less dense than water) → Floats<br>
+• Ice cube (slightly less dense than water) → Floats<br>
+• Grape (about same density as water) → Barely floats<br>
+• Marble (more dense than water) → Sinks<br>
+• Metal key (more dense than water) → Sinks
+</div>
+
+<div class="question">Q8: True or False? All large objects sink and all small objects float.</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer8')">Show Answer</button>
+<div class="answer" id="answer8">False! An object's ability to float or sink depends on its density, not its size. That's why a huge wooden ship can float while a tiny metal pin sinks.</div>
+
+<div class="question">Q9: What practical applications use the principle of density?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer9')">Show Answer</button>
+<div class="answer" id="answer9">
+• Hot air balloons (heated air is less dense than cool air)<br>
+• Submarines (adjust their density to dive or surface)<br>
+• Oil spill cleanup (oil floats on water)<br>
+• Cream rising to the top of milk<br>
+• Ice floating in drinks
+</div>
+
+<div class="question">Q10: Challenge Question: Why does a steel ship float even though steel is denser than water?</div>
+<button class="show-answer-btn" onclick="toggleAnswer('answer10')">Show Answer</button>
+<div class="answer" id="answer10">A steel ship floats because:
+<br>• The ship's hull is shaped to contain air
+<br>• This creates a large volume with relatively little mass
+<br>• The average density of the ship (steel + air inside) becomes less than water
+<br>• This is called the principle of buoyancy!</div>
+
+</body>
+</html>
