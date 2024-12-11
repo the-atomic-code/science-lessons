@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Amazing World of Solutions: A Q&A Adventure!</title>
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.question {
+    background-color: #e6f3ff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.answer {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 5px 0;
+    display: none;
+    line-height: 1.6;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #45a049;
+}
+</style>
+<script>
+function toggleAnswer(id) {
+    var answer = document.getElementById(id);
+    var button = document.getElementById('btn_' + id);
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        button.innerHTML = "Hide Answer";
+    } else {
+        answer.style.display = "none";
+        button.innerHTML = "Show Answer";
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>🧪 The Amazing World of Solutions: A Q&A Adventure! 🔍</h1>
+
+<div class="question">
+    Q1: What is a solution?
+    <br>
+    <button id="btn_a1" onclick="toggleAnswer('a1')">Show Answer</button>
+    <div class="answer" id="a1">
+        A solution is a specific type of homogeneous mixture where one substance (solute) is dissolved into another substance (solvent). Key characteristics:<br><br>
+        • Uniform throughout<br>
+        • Doesn't change over time<br>
+        • Doesn't settle<br>
+        • Doesn't scatter light<br>
+        • Particles are too small to be filtered
+    </div>
+</div>
+
+<div class="question">
+    Q2: What's the difference between a solute and a solvent?
+    <br>
+    <button id="btn_a2" onclick="toggleAnswer('a2')">Show Answer</button>
+    <div class="answer" id="a2">
+        • Solute: The substance being dissolved (like salt in saltwater)<br>
+        • Solvent: The substance that does the dissolving (like water in saltwater)
+    </div>
+</div>
+
+<div class="question">
+    Q3: What happens during the dissolving process?
+    <br>
+    <button id="btn_a3" onclick="toggleAnswer('a3')">Show Answer</button>
+    <div class="answer" id="a3">
+        During dissolving:<br><br>
+        • The solute breaks up from larger crystals into smaller particles<br>
+        • These particles can be molecules or individual ions<br>
+        • In salt water, water molecules actively break salt molecules away from their crystal lattice<br>
+        • The particles become evenly distributed throughout the solvent
+    </div>
+</div>
+
+<div class="question">
+    Q4: What is solubility and what happens in a saturated solution?
+    <br>
+    <button id="btn_a4" onclick="toggleAnswer('a4')">Show Answer</button>
+    <div class="answer" id="a4">
+        • Solubility is the measurement of how much solute can be dissolved in a liter of solvent<br>
+        • A solution becomes saturated when it cannot dissolve any more solute<br>
+        • Any additional solute added to a saturated solution will not dissolve<br>
+        • The undissolved solute will collect at the bottom of the container
+    </div>
+</div>
+
+<div class="question">
+    Q5: How do we describe the concentration of solutions?
+    <br>
+    <button id="btn_a5" onclick="toggleAnswer('a5')">Show Answer</button>
+    <div class="answer" id="a5">
+        Concentration refers to the proportion of solute to solvent:<br><br>
+        • Concentrated solution: High amount of solute relative to solvent<br>
+        • Diluted solution: Low amount of solute relative to solvent<br>
+        • The more solute present, the more concentrated the solution
+    </div>
+</div>
+
+<div class="question">
+    Q6: What's the difference between miscible and immiscible liquids?
+    <br>
+    <button id="btn_a6" onclick="toggleAnswer('a6')">Show Answer</button>
+    <div class="answer" id="a6">
+        • Miscible liquids: Can mix together to form a solution (example: water and ethanol)<br>
+        • Immiscible liquids: Cannot mix to form a solution (example: oil and water)<br>
+        • Miscible liquids form a uniform mixture<br>
+        • Immiscible liquids form separate layers
+    </div>
+</div>
+
+<div class="question">
+    Q7: What makes a mixture a solution? How is it different from other mixtures?
+    <br>
+    <button id="btn_a7" onclick="toggleAnswer('a7')">Show Answer</button>
+    <div class="answer" id="a7">
+        A solution is special because:<br><br>
+        • It is always homogeneous (uniform throughout)<br>
+        • The particles are too small to be seen<br>
+        • It doesn't separate over time<br>
+        • It won't scatter light (clear, not cloudy)<br>
+        • The solute and solvent are thoroughly mixed at the molecular level
+    </div>
+</div>
+
+<div class="question">
+    Q8: Why can't we separate a solution by filtering?
+    <br>
+    <button id="btn_a8" onclick="toggleAnswer('a8')">Show Answer</button>
+    <div class="answer" id="a8">
+        • The solute particles in a solution are extremely small (molecular size)<br>
+        • These particles are much smaller than the pores in a filter paper<br>
+        • The particles pass right through any normal filter<br>
+        • Special separation techniques like distillation are needed to separate solutions
+    </div>
+</div>
+
+<div class="question">
+    Q9: What happens when you mix water and ethanol?
+    <br>
+    <button id="btn_a9" onclick="toggleAnswer('a9')">Show Answer</button>
+    <div class="answer" id="a9">
+        When water and ethanol mix:<br><br>
+        • They form a clear, colorless solution<br>
+        • They are completely miscible<br>
+        • You can mix them in any proportion<br>
+        • The resulting solution will always be uniform<br>
+        • The mixture remains stable and doesn't separate
+    </div>
+</div>
+
+<div class="question">
+    Q10: How can you tell if a solution is homogeneous?
+    <br>
+    <button id="btn_a10" onclick="toggleAnswer('a10')">Show Answer</button>
+    <div class="answer" id="a10">
+        A solution is homogeneous when:<br><br>
+        • It looks the same throughout<br>
+        • There are no visible particles<br>
+        • It doesn't separate into layers<br>
+        • The composition is uniform at any point<br>
+        • Light passes through without scattering
+    </div>
+</div>
+
+<div class="question">
+    Q11: Why do oil and water not form a solution?
+    <br>
+    <button id="btn_a11" onclick="toggleAnswer('a11')">Show Answer</button>
+    <div class="answer" id="a11">
+        Oil and water are immiscible because:<br><br>
+        • They have different molecular properties<br>
+        • They form separate layers instead of mixing<br>
+        • No matter how much you stir them, they will eventually separate<br>
+        • They cannot form a homogeneous mixture<br>
+        • This is an example of immiscible liquids
+    </div>
+</div>
+
+<div class="question">
+    Q12: What are some characteristics that all solutions share?
+    <br>
+    <button id="btn_a12" onclick="toggleAnswer('a12')">Show Answer</button>
+    <div class="answer" id="a12">
+        All solutions share these characteristics:<br><br>
+        • They are homogeneous mixtures<br>
+        • They contain a solute and a solvent<br>
+        • The solute particles are evenly distributed<br>
+        • They are stable and don't separate over time<br>
+        • They are clear (don't scatter light)<br>
+        • They cannot be separated by filtering
+    </div>
+</div>
+
+</body>
+</html>
