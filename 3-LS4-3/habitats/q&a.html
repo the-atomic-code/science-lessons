@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+    background-color: #e8f4f8;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.question {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.question strong {
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.answer {
+    display: none;
+    background-color: #e8f4f8;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.toggle-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.toggle-btn.hide {
+    background-color: #e74c3c;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.fun-fact {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<h1>🌍 Amazing World of Habitats: Where Every Living Thing Calls Home! 🏠</h1>
+
+<div class="question">
+    <p><strong>Q1: What exactly defines a habitat, and what are its essential components?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        A habitat is:
+        <ul>
+            <li>A specific place or environment where a living organism makes its home</li>
+            <li>Provides everything needed for survival</li>
+            <li>Can be large (like a continent) or small (like space under a rock)</li>
+            <li>Includes both:
+                <ul>
+                    <li>Living components (other organisms)</li>
+                    <li>Non-living components (like your bed in your habitat)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q2: How do grassland habitats differ from other habitats, and what makes them unique?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Key characteristics of grasslands:
+        <ul>
+            <li>Dominated by tall growing grass</li>
+            <li>Limited number of trees</li>
+            <li>Geographic distribution:
+                <ul>
+                    <li>Found on all continents except Antarctica</li>
+                    <li>Exists in two main forms: prairies and savannas</li>
+                </ul>
+            </li>
+            <li>Common inhabitants include:
+                <ul>
+                    <li>Aardvarks</li>
+                    <li>Antelope</li>
+                    <li>Brown bears</li>
+                    <li>Squirrels</li>
+                    <li>Lions</li>
+                    <li>Hippos</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q3: What specific conditions make a desert habitat, and how do animals survive there?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Desert characteristics:
+        <ul>
+            <li>Climate conditions:
+                <ul>
+                    <li>Extremely dry environment</li>
+                    <li>Can be either hot or cold</li>
+                    <li>Less than 6 inches of annual rainfall</li>
+                </ul>
+            </li>
+            <li>Vegetation:
+                <ul>
+                    <li>Limited plant life</li>
+                    <li>Specially adapted desert plants</li>
+                </ul>
+            </li>
+            <li>Desert-adapted animals:
+                <ul>
+                    <li>Snakes</li>
+                    <li>Lizards</li>
+                    <li>Birds</li>
+                    <li>Camels</li>
+                    <li>Kangaroos</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q4: What makes tropical forests different from temperate forests?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Comparison of forest types:
+        <ul>
+            <li>Tropical Forests:
+                <ul>
+                    <li>Receive more than 8 feet of rain annually</li>
+                    <li>Two types:
+                        <ul>
+                            <li>Rainforests - year-round rainfall</li>
+                            <li>Seasonal forests - alternating rainy and dry seasons</li>
+                        </ul>
+                    </li>
+                    <li>Home to most of Earth's animal species</li>
+                    <li>Common inhabitants: baboons, bats, butterflies, geckos, frogs, monkeys, tigers, toucans</li>
+                </ul>
+            </li>
+            <li>Temperate Forests:
+                <ul>
+                    <li>Seasonal leaf changes</li>
+                    <li>Common in United States, Europe, and Asia</li>
+                    <li>Typical inhabitants: deer, elk, turkeys, wolves</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="fun-fact">🌟 Fun Fact: Tropical forests contain more animal species than all other habitats combined!</div>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q5: What unique features characterize coniferous forests, and why are they special?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Coniferous forest characteristics:
+        <ul>
+            <li>Tree characteristics:
+                <ul>
+                    <li>Home to world's tallest trees</li>
+                    <li>Trees adapted to survive extreme cold</li>
+                </ul>
+            </li>
+            <li>Wildlife includes:
+                <ul>
+                    <li>Eagles</li>
+                    <li>Owls</li>
+                    <li>Raccoons</li>
+                    <li>Giant pandas</li>
+                    <li>Weasels</li>
+                    <li>Wasps</li>
+                    <li>Worms</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q6: How do mountain habitats support life despite their challenging conditions?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Mountain habitat features:
+        <ul>
+            <li>Environmental conditions:
+                <ul>
+                    <li>Cooler temperatures at higher elevations</li>
+                    <li>Thinner oxygen levels</li>
+                </ul>
+            </li>
+            <li>Adapted wildlife:
+                <ul>
+                    <li>Badgers</li>
+                    <li>Beavers</li>
+                    <li>Buzzards</li>
+                    <li>Foxes</li>
+                    <li>Red pandas</li>
+                    <li>Wombats</li>
+                    <li>Wrens</li>
+                    <li>Gorillas</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q7: What makes oceans the largest habitat on Earth, and what types of life do they support?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Ocean characteristics:
+        <ul>
+            <li>Size and scope:
+                <ul>
+                    <li>Largest animal habitat on Earth</li>
+                    <li>Parts still unexplored by humans</li>
+                </ul>
+            </li>
+            <li>Marine life includes:
+                <ul>
+                    <li>Lobsters</li>
+                    <li>Orcas</li>
+                    <li>Seals</li>
+                    <li>Sharks</li>
+                </ul>
+            </li>
+            <li>Coral reef sub-habitats:
+                <ul>
+                    <li>Require sunlight to survive</li>
+                    <li>Home to crabs, eels, clams, and angelfish</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="fun-fact">🌊 Fun Fact: Some parts of the ocean have never been explored by humans!</div>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q8: How do polar habitats differ from other habitats, and what adaptations do their inhabitants have?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Polar habitat features:
+        <ul>
+            <li>Environmental conditions:
+                <ul>
+                    <li>Coldest regions on Earth</li>
+                    <li>Partially frozen terrain</li>
+                    <li>Located at Earth's North and South poles</li>
+                </ul>
+            </li>
+            <li>Adapted wildlife:
+                <ul>
+                    <li>Polar bears</li>
+                    <li>Penguins</li>
+                    <li>Whales</li>
+                    <li>Walruses</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q9: How do freshwater habitats differ from marine habitats?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Comparison of aquatic habitats:
+        <ul>
+            <li>Freshwater habitats:
+                <ul>
+                    <li>Include lakes, streams, and rivers</li>
+                    <li>Home to various reptiles, fish, and birds</li>
+                </ul>
+            </li>
+            <li>Marine habitats:
+                <ul>
+                    <li>Salt water environments</li>
+                    <li>Include coastlines and coral reefs</li>
+                    <li>Support diverse marine life</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <p><strong>Q10: How have humans created their own habitats, and what makes them unique?</strong></p>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Human-created habitats:
+        <ul>
+            <li>Cities:
+                <ul>
+                    <li>Home to humans and their pets</li>
+                    <li>Support urban wildlife like bugs, small mammals, and birds</li>
+                </ul>
+            </li>
+            <li>Farms:
+                <ul>
+                    <li>Modified environments for agriculture</li>
+                    <li>Provide habitat for both domestic and wild animals</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+function toggleAnswer(btn) {
+    const answer = btn.nextElementSibling;
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        btn.textContent = "Hide Answer";
+        btn.classList.add("hide");
+    } else {
+        answer.style.display = "none";
+        btn.textContent = "Show Answer";
+        btn.classList.remove("hide");
+    }
+}
+</script>
+
+</body>
+</html>
