@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+.question-container {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.question-container:hover {
+    transform: translateY(-3px);
+}
+.question {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.15em;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+.answer {
+    display: none;
+    padding: 20px;
+    background-color: #e8f4f8;
+    border-radius: 8px;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+.toggle-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-size: 0.95em;
+    transition: background-color 0.3s;
+}
+.toggle-btn:hover {
+    background-color: #2980b9;
+}
+h1 {
+    color: #1a5f7a;
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 35px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.intro-text {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+.emoji {
+    font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+
+<h1>🌍 Journey Through Earth's Ecosystems: An Interactive Exploration! 🌊</h1>
+
+<div class="intro-text">
+    Ready to embark on an exciting journey to explore the diverse ecosystems of our planet? Let's discover how life thrives in different environments! <span class="emoji">🌿🦁🐠🌵</span>
+</div>
+
+<div class="question-container">
+    <div class="question">1. What is an ecosystem? Who coined this term and when?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">An ecosystem is a community of life forms (living components) interacting with non-living components in their environment. The term was coined by English scientist A.J. Tansley in 1953. Think of it as nature's interconnected web where everything plays a crucial role! 🕸️</div>
+</div>
+
+<div class="question-container">
+    <div class="question">2. What makes up an ecosystem? Explain with examples.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">An ecosystem consists of:
+    <br>1. Living components (biotic factors):
+    - Plants
+    - Animals
+    - Microorganisms
+    <br>2. Non-living components (abiotic factors):
+    - Sunlight
+    - Water
+    - Soil
+    - Air
+    <br>Example: In a garden ecosystem, plants (living) depend on sunlight, water, and soil (non-living) to grow and survive. 🌱</div>
+</div>
+
+<div class="question-container">
+    <div class="question">3. What are the two main types of ecosystems? How small or large can an ecosystem be?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">The two main types are:
+    <br>1. Terrestrial ecosystems (land-based)
+    <br>2. Aquatic ecosystems (water-based)
+    <br><br>Size of ecosystems:
+    - Can be as small as a pond
+    - Can be as large as an ocean
+    - Everything in our surroundings is part of some ecosystem! 🌍</div>
+</div>
+
+<div class="question-container">
+    <div class="question">4. Describe the forest ecosystem in detail.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Forest ecosystems are characterized by:
+    <br>1. Vegetation:
+    - Many varieties of trees
+    - Different types of plants
+    - Various herbs
+    <br>2. Animal life:
+    - Birds
+    - Reptiles
+    - Insects
+    - Large mammals
+    <br>3. Rich biodiversity with complex interactions between species
+    <br>4. Abundant plant and animal life due to favorable conditions 🌳</div>
+</div>
+
+<div class="question-container">
+    <div class="question">5. How do grassland ecosystems differ from forest ecosystems?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Key differences:
+    <br>1. Vegetation type:
+    - Grasslands: Dominated by grasses
+    - Forests: Dominated by trees
+    <br>2. Tree density:
+    - Grasslands: Few or no trees
+    - Forests: Abundant trees
+    <br>3. Both ecosystems support different types of animals adapted to their specific environments 🦒</div>
+</div>
+
+<div class="question-container">
+    <div class="question">6. What are the unique characteristics of a desert ecosystem?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Desert ecosystems are characterized by:
+    <br>1. Climate:
+    - Hot and dry conditions
+    - Scanty rainfall
+    <br>2. Landscape:
+    - Mostly barren land
+    <br>3. Adaptations:
+    - Plants like cactus that can store water
+    - Animals like camels that can survive with little water
+    <br>4. Limited biodiversity compared to forests 🌵</div>
+</div>
+
+<div class="question-container">
+    <div class="question">7. What makes the tundra ecosystem unique?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Tundra ecosystems are unique because:
+    <br>1. Climate:
+    - Extremely cold conditions
+    - Covered with ice most of the time
+    <br>2. Vegetation:
+    - Limited variety of plants
+    - No tall trees
+    <br>3. Special adaptations:
+    - Plants and animals have specific adaptations to survive extreme cold
+    <br>4. Located in cold climatic regions ❄️</div>
+</div>
+
+<div class="question-container">
+    <div class="question">8. How are aquatic ecosystems classified? What are their key differences?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Aquatic ecosystems are classified based on salt concentration:
+    <br>1. Marine Ecosystem:
+    - Higher salt concentration
+    - Includes seas and oceans
+    - Wide variety of organisms
+    - Larger in size
+    <br>2. Freshwater Ecosystem:
+    - Lower salt concentration
+    - Includes rivers, ponds, lakes, streams
+    - Comparatively fewer varieties of organisms
+    - Generally smaller in size 🌊</div>
+</div>
+
+<div class="question-container">
+    <div class="question">9. Why is the interaction between living and non-living components important in an ecosystem?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Interactions are crucial because:
+    <br>1. Survival depends on these interactions
+    - Plants need sunlight, water, and soil to grow
+    - Animals need plants and other animals for food
+    <br>2. Creates balance in nature
+    <br>3. Maintains the ecosystem's health
+    <br>4. Ensures continuation of life processes 🔄</div>
+</div>
+
+<div class="question-container">
+    <div class="question">10. How do organisms adapt to different ecosystems?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Organisms adapt differently in each ecosystem:
+    <br>1. Desert adaptations:
+    - Cacti store water
+    - Camels can survive with little water
+    <br>2. Tundra adaptations:
+    - Animals have thick fur
+    - Plants grow close to ground
+    <br>3. Aquatic adaptations:
+    - Fish have gills
+    - Marine plants can survive in salty water
+    <br>These adaptations help organisms survive in their specific environments! 🦎</div>
+</div>
+
+<script>
+function toggleAnswer(btn) {
+    var answer = btn.nextElementSibling;
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        btn.innerHTML = "Hide Answer";
+        btn.style.backgroundColor = "#e74c3c";
+    } else {
+        answer.style.display = "none";
+        btn.innerHTML = "Show Answer";
+        btn.style.backgroundColor = "#3498db";
+    }
+}
+</script>
+
+</body>
+</html>
