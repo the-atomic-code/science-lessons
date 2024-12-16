@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    background: linear-gradient(45deg, #a8e6cf, #dcedc1);
+    border-radius: 15px;
+}
+
+.intro {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.question-container {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.question-container:hover {
+    transform: translateY(-3px);
+}
+
+.question {
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    padding-left: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.toggle-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #2980b9;
+}
+
+.toggle-btn.hide {
+    background-color: #e74c3c;
+}
+
+.toggle-btn.hide:hover {
+    background-color: #c0392b;
+}
+
+.answer {
+    display: none;
+    color: #2c3e50;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.emoji {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="title">🌍 Journey Through Earth's Ecosystems: An Interactive Adventure! 🌿</div>
+
+<div class="intro">
+    Ready to explore the fascinating world of ecosystems? Let's discover how every living and non-living thing plays a crucial role in nature's grand design! 🌱 🐾 💧
+</div>
+
+<div class="question-container">
+    <div class="question">🔍 Q1: What exactly is an ecosystem? Give a complete definition.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">An ecosystem is a community of living organisms (biotic components) along with their natural habitat and the non-living components (abiotic components) of their environment. It's a network where all these components interact with each other in a given area. Ecosystems can be of any size - from a small plant pot to the entire Earth!</div>
+</div>
+
+<div class="question-container">
+    <div class="question">🌿 Q2: What are the two major components of an ecosystem? Explain each with examples.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">The two major components are:<br><br>
+1. Abiotic Components: These are non-living elements including:<br>
+   • Air<br>
+   • Water<br>
+   • Sunlight<br>
+   • Nutrients<br>
+   • Temperature<br><br>
+2. Biotic Components: These are all living organisms including:<br>
+   • Plants<br>
+   • Animals<br>
+   • Fungi<br>
+   • Micro-organisms<br>
+   • Humans</div>
+</div>
+
+<div class="question-container">
+    <div class="question">📏 Q3: How do ecosystems vary in size? Give examples from smallest to largest.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Ecosystems can exist at any scale. Here are examples from smallest to largest:<br><br>
+1. Area under a plant pot<br>
+2. Space under a rock (with its microorganisms and insects)<br>
+3. A pond or puddle<br>
+4. A forest<br>
+5. A city ecosystem<br>
+6. The vast ocean<br>
+7. The entire Earth</div>
+</div>
+
+<div class="question-container">
+    <div class="question">🎯 Q4: What is a niche in an ecosystem? Explain with examples.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">A niche is the specific role or position an organism has in its ecosystem. It includes:<br><br>
+• What the organism eats<br>
+• Its role in the food chain<br>
+• Where it lives within the ecosystem<br>
+• How it interacts with other species<br><br>
+Example: In a forest ecosystem, a deer's niche is being a herbivore that eats plants and serves as prey for predators like lions and tigers. An important rule is that no two species can occupy exactly the same niche for long - one will either have to adapt, leave, or go extinct.</div>
+</div>
+
+<div class="question-container">
+    <div class="question">🦠 Q5: How is the human body an ecosystem? Explain in detail.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">The human body is a fascinating ecosystem because:<br><br>
+• It hosts thousands of different microorganisms<br>
+• These microorganisms form communities<br>
+• They interact with their environment (our body)<br>
+• They have specific niches (some help digestion, others protect skin)<br>
+• There are both biotic (microorganisms) and abiotic (body fluids, temperature) components<br><br>
+This makes our body a perfect example of a self-contained ecosystem!</div>
+</div>
+
+<div class="question-container">
+    <div class="question">🌊 Q6: What makes a pond an ecosystem? Identify its components.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">A pond ecosystem includes:<br><br>
+Biotic Components:<br>
+• Aquatic plants<br>
+• Fish<br>
+• Insects<br>
+• Microorganisms<br>
+• Amphibians<br><br>
+Abiotic Components:<br>
+• Water<br>
+• Dissolved oxygen<br>
+• Minerals<br>
+• Sunlight<br>
+• Temperature<br><br>
+All these components interact and depend on each other, making the pond a perfect example of an ecosystem.</div>
+</div>
+
+<div class="question-container">
+    <div class="question">🤔 Q7: Why can't two species occupy exactly the same niche? Explain the concept.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Two species cannot occupy the same niche because:<br><br>
+• They would compete for exactly the same resources<br>
+• They would require the same food<br>
+• They would need the same habitat<br>
+• This competition would be unsustainable<br><br>
+This principle is called competitive exclusion. Eventually:<br>
+• One species must adapt and find a different niche<br>
+• One species must move to a different area<br>
+• One species will go extinct in that ecosystem</div>
+</div>
+
+<div class="question-container">
+    <div class="question">🌍 Q8: What are the signs of a healthy ecosystem?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">A healthy ecosystem shows these characteristics:<br><br>
+• Balance between all components<br>
+• Proper interaction between biotic and abiotic components<br>
+• Each species successfully fulfilling its niche<br>
+• Sustainable population levels<br>
+• Clean and unpolluted environment<br>
+• Proper nutrient cycling<br>
+• Stable energy flow through the system</div>
+</div>
+
+<div class="question-container">
+    <div class="question">⚠️ Q9: What are the major threats to ecosystems and their effects?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Major threats include:<br><br>
+1. Pollution effects:<br>
+   • Disrupts natural processes<br>
+   • Harms both biotic and abiotic components<br>
+   • Can make areas uninhabitable<br><br>
+2. Human activities:<br>
+   • Disturbs natural balances<br>
+   • Can lead to species extinction<br>
+   • Affects both small and large ecosystems<br><br>
+3. Climate change:<br>
+   • Alters temperature and weather patterns<br>
+   • Affects species survival<br>
+   • Disrupts ecosystem balance</div>
+</div>
+
+<div class="question-container">
+    <div class="question">💡 Q10: How are different ecosystems connected to each other?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">Ecosystems are connected in several ways:<br><br>
+• Through water cycles<br>
+• Through animal migration<br>
+• Through air and wind patterns<br>
+• Through food webs that span multiple ecosystems<br>
+• Through nutrient cycles<br><br>
+This interconnectedness means that changes in one ecosystem can affect others, highlighting why we need to protect all ecosystems!</div>
+</div>
+
+<script>
+function toggleAnswer(btn) {
+    const answer = btn.nextElementSibling;
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        btn.textContent = "Hide Answer";
+        btn.classList.add("hide");
+    } else {
+        answer.style.display = "none";
+        btn.textContent = "Show Answer";
+        btn.classList.remove("hide");
+    }
+}
+</script>
+
+</body>
+</html>
