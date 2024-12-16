@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f7ff;
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.question-container {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.question-container:hover {
+    transform: translateY(-2px);
+}
+
+.question {
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.answer {
+    display: none;
+    color: #2c3e50;
+    padding: 20px;
+    background-color: #e8f4f8;
+    border-radius: 8px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.answer ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+.answer li {
+    margin-bottom: 8px;
+}
+
+.toggle-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9em;
+}
+
+.toggle-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.toggle-btn.hide {
+    background-color: #e74c3c;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.note {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="title">🌊 Dive Into Freshwater Ecosystems: Nature's Aquatic Wonderland! 🌿</div>
+<div class="subtitle">Let's explore the fascinating world of freshwater habitats and their incredible diversity!</div>
+
+<div class="question-container">
+    <div class="question">1. Why is freshwater so precious on Earth? Explain the statistics.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Freshwater is precious because:
+        <ul>
+            <li>Only 2.5% of Earth's total water is freshwater</li>
+            <li>Most of this is locked in glaciers and ice caps</li>
+            <li>Less than 1% is readily available for use</li>
+            <li>This small amount supports most terrestrial and freshwater life on Earth</li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">2. How do scientists measure and compare the salt content in freshwater versus saltwater ecosystems?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Salt content is measured in parts per thousand (ppt):
+        <ul>
+            <li>Freshwater: 0.5 parts per thousand</li>
+            <li>Saltwater: 30-50 parts per thousand</li>
+            <li>This difference is why freshwater organisms can't survive in saltwater and vice versa</li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">3. Describe the complete journey of a river from its source to its mouth.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        The river's journey includes:
+        <ul>
+            <li>Begins at the <span class="highlight">headwater</span> (source)</li>
+            <li>Flows downhill following landscape gradient</li>
+            <li>Speed varies based on slope:
+                <ul>
+                    <li>Steep slopes = fast flow</li>
+                    <li>Gentle slopes = slower flow</li>
+                </ul>
+            </li>
+            <li>Finally reaches the <span class="highlight">mouth</span> where it empties into a larger body of water</li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">4. What makes lakes and ponds unique among freshwater ecosystems?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Lakes and ponds are unique because:
+        <ul>
+            <li>Size variation:
+                <ul>
+                    <li>Can be as small as a few square meters</li>
+                    <li>Can be as large as thousands of square miles</li>
+                </ul>
+            </li>
+            <li>Duration variation:
+                <ul>
+                    <li>Temporary ponds: May last only weeks or months</li>
+                    <li>Permanent lakes: Can exist for hundreds of years</li>
+                </ul>
+            </li>
+            <li>They are inland bodies of standing water</li>
+            <li>They support unique ecosystems based on their depth and size</li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">5. Compare and contrast the four main types of wetlands.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        The four main wetland types:
+        <ul>
+            <li>Marshes:
+                <ul>
+                    <li>Dominated by grasses and reeds</li>
+                    <li>Home to frogs, snakes, and alligators</li>
+                    <li>Usually have standing water</li>
+                </ul>
+            </li>
+            <li>Swamps:
+                <ul>
+                    <li>Characterized by trees</li>
+                    <li>Water-logged soil</li>
+                    <li>Rich biodiversity</li>
+                </ul>
+            </li>
+            <li>Fens:
+                <ul>
+                    <li>Peat-producing wetlands</li>
+                    <li>Dominated by moss</li>
+                    <li>Receive water from groundwater</li>
+                </ul>
+            </li>
+            <li>Bogs:
+                <ul>
+                    <li>Peat-producing wetlands</li>
+                    <li>Dominated by moss</li>
+                    <li>Receive water mainly from rainfall</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">6. How does water flow affect the accumulation of organic material in rivers and streams?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Water flow affects organic material in several ways:
+        <ul>
+            <li>Fast-moving water:
+                <ul>
+                    <li>Creates turbulence</li>
+                    <li>Prevents organic material from settling</li>
+                    <li>Constantly moves materials downstream</li>
+                </ul>
+            </li>
+            <li>Slow-moving water:
+                <ul>
+                    <li>Allows organic material to settle</li>
+                    <li>Creates deposits of organic matter</li>
+                    <li>Supports different types of ecosystems</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">7. What specific adaptations do freshwater organisms have that make them unable to survive in saltwater?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Freshwater organisms have specific adaptations:
+        <ul>
+            <li>Cell membrane adaptations:
+                <ul>
+                    <li>Specialized for low salt environments</li>
+                    <li>Cannot regulate high salt concentrations</li>
+                </ul>
+            </li>
+            <li>Osmoregulation mechanisms:
+                <ul>
+                    <li>Adapted to prevent too much water intake</li>
+                    <li>Cannot function in high salt conditions</li>
+                </ul>
+            </li>
+            <li>Specialized organs for maintaining proper salt balance</li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">8. What role do wetlands play in the broader ecosystem?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Wetlands serve crucial ecosystem functions:
+        <ul>
+            <li>Water Management:
+                <ul>
+                    <li>Act as natural water filters</li>
+                    <li>Control flooding</li>
+                    <li>Recharge groundwater</li>
+                </ul>
+            </li>
+            <li>Habitat:
+                <ul>
+                    <li>Support diverse wildlife</li>
+                    <li>Provide breeding grounds</li>
+                    <li>Serve as migration stops</li>
+                </ul>
+            </li>
+            <li>Environmental Benefits:
+                <ul>
+                    <li>Carbon storage</li>
+                    <li>Erosion control</li>
+                    <li>Water quality improvement</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">9. How do seasonal changes affect different types of freshwater ecosystems?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Seasonal effects vary by ecosystem:
+        <ul>
+            <li>Rivers and Streams:
+                <ul>
+                    <li>Flow rates change with rainfall and snowmelt</li>
+                    <li>Water levels fluctuate seasonally</li>
+                </ul>
+            </li>
+            <li>Lakes and Ponds:
+                <ul>
+                    <li>Temperature stratification changes</li>
+                    <li>Some may freeze in winter</li>
+                    <li>Temporary ponds may dry up in summer</li>
+                </ul>
+            </li>
+            <li>Wetlands:
+                <ul>
+                    <li>Water levels vary with seasons</li>
+                    <li>Plant and animal activity changes</li>
+                    <li>Some may be seasonal</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">10. What are the main threats to freshwater ecosystems in today's world?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Major threats include:
+        <ul>
+            <li>Human Activities:
+                <ul>
+                    <li>Pollution from industrial and agricultural runoff</li>
+                    <li>Over-extraction of water</li>
+                    <li>Dam construction</li>
+                </ul>
+            </li>
+            <li>Climate Change:
+                <ul>
+                    <li>Changing rainfall patterns</li>
+                    <li>Temperature increases</li>
+                    <li>Extreme weather events</li>
+                </ul>
+            </li>
+            <li>Habitat Destruction:
+                <ul>
+                    <li>Urban development</li>
+                    <li>Drainage of wetlands</li>
+                    <li>Deforestation</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="note">Understanding these threats is crucial for conservation efforts!</div>
+    </div>
+</div>
+
+<script>
+function toggleAnswer(btn) {
+    const answer = btn.nextElementSibling;
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        btn.textContent = "Hide Answer";
+        btn.classList.add("hide");
+    } else {
+        answer.style.display = "none";
+        btn.textContent = "Show Answer";
+        btn.classList.remove("hide");
+    }
+}
+</script>
+
+</body>
+</html>
