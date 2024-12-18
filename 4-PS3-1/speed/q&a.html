@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.question-container {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.question-container:hover {
+    transform: translateY(-2px);
+}
+
+.question {
+    color: #34495e;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.answer {
+    display: none;
+    color: #2c3e50;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.answer ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.answer li {
+    margin-bottom: 8px;
+}
+
+.toggle-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1em;
+}
+
+.toggle-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.toggle-btn.hide {
+    background-color: #e74c3c;
+}
+
+.formula {
+    background-color: #d5f5e3;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.example {
+    background-color: #ebf5fb;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.fun-fact {
+    background-color: #fdebd0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<div class="title">🚀 Speed Science: Racing Through the Physics of Motion! 🏃‍♂️</div>
+
+<div class="question-container">
+    <div class="question">1. What exactly is speed in scientific terms, and how is it different from just "going fast"?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Speed is a quantitative measure that describes:
+        <ul>
+            <li>The rate at which an object changes its position</li>
+            <li>The distance traveled per unit of time</li>
+            <li>A scalar quantity (meaning it has magnitude but no direction)</li>
+        </ul>
+        Unlike the general concept of "going fast," speed is:
+        <ul>
+            <li>Precisely measurable</li>
+            <li>Can be expressed in specific units</li>
+            <li>Used in scientific calculations</li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">2. How do we calculate speed, and what does each component of the speed formula represent?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        <div class="formula">Speed = Distance ÷ Time</div>
+        Components explained:
+        <ul>
+            <li><strong>Distance:</strong> The total length of the path traveled (measured in meters, kilometers, miles, etc.)</li>
+            <li><strong>Time:</strong> The duration of motion (measured in seconds, hours, etc.)</li>
+            <li><strong>Speed:</strong> The resulting rate of motion (e.g., meters per second, kilometers per hour)</li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">3. A car travels 240 kilometers in 3 hours. Calculate its speed and explain each step of your calculation.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        <div class="example">
+        Let's solve this step by step:
+        <ol>
+            <li>Identify the given values:
+                <ul>
+                    <li>Distance = 240 kilometers</li>
+                    <li>Time = 3 hours</li>
+                </ul>
+            </li>
+            <li>Apply the speed formula:
+                <ul>
+                    <li>Speed = Distance ÷ Time</li>
+                    <li>Speed = 240 km ÷ 3 h</li>
+                    <li>Speed = 80 kilometers per hour (km/h)</li>
+                </ul>
+            </li>
+        </ol>
+        </div>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">4. What are the different units used to measure speed, and when is each unit most appropriate to use?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Common speed units and their applications:
+        <ul>
+            <li><strong>Meters per second (m/s):</strong>
+                <ul>
+                    <li>Used in scientific calculations</li>
+                    <li>Appropriate for short distances and times</li>
+                    <li>Common in physics experiments</li>
+                </ul>
+            </li>
+            <li><strong>Kilometers per hour (km/h):</strong>
+                <ul>
+                    <li>Used for vehicle speeds in many countries</li>
+                    <li>Appropriate for longer distances</li>
+                    <li>Common in everyday travel</li>
+                </ul>
+            </li>
+            <li><strong>Miles per hour (mph):</strong>
+                <ul>
+                    <li>Used in US, UK, and some other countries</li>
+                    <li>Common for vehicle speeds and weather systems</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">5. How does changing distance or time affect the speed of an object? Provide specific examples.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Effects of changing variables:
+        <ul>
+            <li><strong>Increasing distance (time constant):</strong>
+                <ul>
+                    <li>Example: Running 200m vs 100m in 20 seconds
+                    <li>200m ÷ 20s = 10 m/s</li>
+                    <li>100m ÷ 20s = 5 m/s</li>
+                    <li>Greater distance = Higher speed</li>
+                </ul>
+            </li>
+            <li><strong>Increasing time (distance constant):</strong>
+                <ul>
+                    <li>Example: Running 100m in 10s vs 20s
+                    <li>100m ÷ 10s = 10 m/s</li>
+                    <li>100m ÷ 20s = 5 m/s</li>
+                    <li>Greater time = Lower speed</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">6. What are some real-world speed records, and how do they compare to each other?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        <div class="fun-fact">
+        Notable speed records:
+        <ul>
+            <li><strong>Animals:</strong>
+                <ul>
+                    <li>Cheetah: 70-75 mph (fastest land animal)</li>
+                    <li>Peregrine Falcon: 240+ mph (fastest bird)</li>
+                </ul>
+            </li>
+            <li><strong>Human Achievements:</strong>
+                <ul>
+                    <li>Usain Bolt: 27.8 mph (fastest human)</li>
+                    <li>Shanghai Maglev Train: 268 mph (fastest commercial train)</li>
+                    <li>Parker Solar Probe: 430,000 mph (fastest human-made object)</li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">7. Two runners complete a 400-meter race. Runner A finishes in 50 seconds, and Runner B finishes in 55 seconds. Calculate and compare their speeds.</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        <div class="example">
+        Let's calculate each runner's speed:
+        <ul>
+            <li><strong>Runner A:</strong>
+                <ul>
+                    <li>Speed = 400m ÷ 50s = 8 meters per second</li>
+                </ul>
+            </li>
+            <li><strong>Runner B:</strong>
+                <ul>
+                    <li>Speed = 400m ÷ 55s = 7.27 meters per second</li>
+                </ul>
+            </li>
+            <li><strong>Comparison:</strong>
+                <ul>
+                    <li>Runner A is faster by 0.73 meters per second</li>
+                    <li>This demonstrates how even small time differences affect speed</li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<div class="question-container">
+    <div class="question">8. How do scientists measure very fast speeds, such as the speed of the Parker Solar Probe?</div>
+    <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+    <div class="answer">
+        Scientists use various methods:
+        <ul>
+            <li><strong>Direct Measurements:</strong>
+                <ul>
+                    <li>Radar tracking</li>
+                    <li>Doppler effect measurements</li>
+                    <li>Radio signals</li>
+                </ul>
+            </li>
+            <li><strong>Calculated Measurements:</strong>
+                <ul>
+                    <li>Position changes over time</li>
+                    <li>Orbital mechanics calculations</li>
+                    <li>Computer modeling</li>
+                </ul>
+            </li>
+            <li><strong>Advanced Technology:</strong>
+                <ul>
+                    <li>Satellite tracking systems</li>
+                    <li>High-precision atomic clocks</li>
+                    <li>Advanced telemetry systems</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+function toggleAnswer(btn) {
+    const answer = btn.nextElementSibling;
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        btn.textContent = "Hide Answer";
+        btn.classList.add("hide");
+    } else {
+        answer.style.display = "none";
+        btn.textContent = "Show Answer";
+        btn.classList.remove("hide");
+    }
+}
+</script>
+
+</body>
+</html>
