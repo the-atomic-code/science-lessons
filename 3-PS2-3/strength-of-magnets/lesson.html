@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Magnets</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #1e90ff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .activity {
+            background-color: #e6f7ff;
+            border-left: 5px solid #1e90ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        .fun-fact {
+            background-color: #fff0f5;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 15px 0;
+            border: 2px dashed #ff69b4;
+        }
+        .magnet-visual {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .magnet {
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            margin: 0 10px;
+            display: flex;
+            color: white;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .round-magnet {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            margin: 0 10px;
+            display: flex;
+            color: white;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .small-magnet {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: flex;
+            color: white;
+            font-weight: bold;
+            font-size: 0.7em;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .force-line {
+            position: absolute;
+            top: 50%;
+            left: 33%;
+            width: 33%;
+            height: 5px;
+            background-color: rgba(128,128,128,0.5);
+            z-index: -1;
+        }
+        .demo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .demo-box {
+            width: 45%;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .attraction, .repulsion {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .attraction {
+            color: #009900;
+        }
+        .repulsion {
+            color: #cc0000;
+        }
+        .interactive-btn {
+            display: block;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px auto;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .interactive-btn:hover {
+            background-color: #0066cc;
+        }
+        .question {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .pulse {
+            animation: pulse-animation 2s infinite;
+        }
+        @keyframes pulse-animation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .magnet-pole {
+            flex: 1; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .north-pole {
+            background-color: #ff0000;
+        }
+        .south-pole {
+            background-color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧲 Magical Magnets 🧲</h1>
+    <h2>A Super Science Adventure!</h2>
+    
+    <div class="container">
+        <h2>What Are Magnets?</h2>
+        <p>Magnets are amazing objects that can push or pull on other magnets and certain metals (like iron) without even touching them! This invisible pushing and pulling is called <strong>magnetic force</strong>.</p>
+        
+        <div class="magnet-visual">
+            <div class="magnet" style="display: flex;">
+                <div class="magnet-pole north-pole">N</div>
+                <div class="magnet-pole south-pole">S</div>
+            </div>
+            <div class="force-line"></div>
+            <div class="magnet" style="display: flex;">
+                <div class="magnet-pole north-pole">N</div>
+                <div class="magnet-pole south-pole">S</div>
+            </div>
+        </div>
+        
+        <div class="fun-fact">
+            <h3>⭐ Magnet Fun Fact! ⭐</h3>
+            <p>The Earth is a giant magnet! That's why compass needles always point north - they're following Earth's magnetic force!</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Magical Magnet Rule #1: Distance Matters!</h2>
+        <p>The closer two magnets are to each other, the <strong>stronger</strong> their magnetic force becomes!</p>
+        
+        <div class="demo-container">
+            <div class="demo-box">
+                <h3 style="text-align: center;">Close Together = Strong Force</h3>
+                <div class="magnet-visual">
+                    <div class="magnet" style="display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                    <div class="small-magnet" style="margin-left:10px; display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                </div>
+                <div class="attraction pulse">SUPER STRONG PULL!</div>
+            </div>
+            
+            <div class="demo-box">
+                <h3 style="text-align: center;">Far Apart = Weak Force</h3>
+                <div class="magnet-visual">
+                    <div class="magnet" style="display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                    <div class="small-magnet" style="margin-left:80px; display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                </div>
+                <div class="attraction">weak pull</div>
+            </div>
+        </div>
+        
+        <div class="activity">
+            <h3>✨ Try This At Home! ✨</h3>
+            <p>Get two refrigerator magnets. Start with them far apart and slowly move them closer. Can you feel the force getting stronger?</p>
+            <p>How far away can you feel the magnets start to pull on each other?</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Magical Magnet Rule #2: Size Matters!</h2>
+        <p>Bigger magnets usually create <strong>stronger</strong> magnetic forces than smaller magnets.</p>
+        
+        <div class="demo-container">
+            <div class="demo-box">
+                <h3 style="text-align: center;">Big Magnets = Strong Force</h3>
+                <div class="magnet-visual">
+                    <div class="magnet" style="width:120px; height:60px; display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                    <div class="magnet" style="width:120px; height:60px; margin-left:20px; display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                </div>
+                <div class="attraction pulse">SUPER STRONG PULL!</div>
+            </div>
+            
+            <div class="demo-box">
+                <h3 style="text-align: center;">Small Magnets = Weaker Force</h3>
+                <div class="magnet-visual">
+                    <div class="small-magnet" style="display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                    <div class="small-magnet" style="margin-left:20px; display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                </div>
+                <div class="attraction">smaller pull</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Magical Magnet Rule #3: Direction Matters!</h2>
+        <p>Every magnet has two sides (or poles): <span style="color:red">North (N)</span> and <span style="color:blue">South (S)</span>.</p>
+        <p>Remember: <strong>Opposites attract, same poles repel!</strong></p>
+        
+        <div class="demo-container">
+            <div class="demo-box">
+                <h3 style="text-align: center;">Same Poles = REPULSION</h3>
+                <div class="magnet-visual">
+                    <div class="magnet" style="display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                    <div class="magnet" style="margin-left:40px; display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                </div>
+                <div class="repulsion">They PUSH apart!</div>
+            </div>
+            
+            <div class="demo-box">
+                <h3 style="text-align: center;">Opposite Poles = ATTRACTION</h3>
+                <div class="magnet-visual">
+                    <div class="magnet" style="display: flex;">
+                        <div class="magnet-pole north-pole">N</div>
+                        <div class="magnet-pole south-pole">S</div>
+                    </div>
+                    <div class="magnet" style="margin-left:10px; display: flex; flex-direction: row-reverse;">
+                        <div class="magnet-pole south-pole">S</div>
+                        <div class="magnet-pole north-pole">N</div>
+                    </div>
+                </div>
+                <div class="attraction">They PULL together!</div>
+            </div>
+        </div>
+        
+        <div class="activity">
+            <h3>🔍 Magnet Detective Challenge 🔍</h3>
+            <p>Find two magnets. Without looking at any labels, can you figure out which sides are North and which are South just by seeing how they interact with each other?</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Magical Magnet Rule #4: Magnets Come in Many Shapes!</h2>
+        <p>Magnets can be rectangles, circles, horseshoes, and many other shapes - but they all have North and South poles!</p>
+        
+        <div class="magnet-visual" style="justify-content: space-around;">
+            <div class="magnet" style="display: flex;">
+                <div class="magnet-pole north-pole">N</div>
+                <div class="magnet-pole south-pole">S</div>
+            </div>
+            <div class="round-magnet" style="display: flex; flex-direction: column;">
+                <div style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #ff0000;">N</div>
+                <div style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #0000ff;">S</div>
+            </div>
+            <div style="width:80px; height:80px; border-radius:10px; background-color:#888; display:flex; justify-content:center; align-items:center; color:white; font-weight:bold;">
+                <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #ff0000; border-radius: 10px 10px 0 0;">N</div>
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #0000ff; border-radius: 0 0 10px 10px;">S</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Let's Practice What We've Learned!</h2>
+        
+        <div class="question" id="question1">
+            <div class="question-text">1. Which pair of magnets will have a STRONGER magnetic force?</div>
+            <div class="options">
+                <input type="radio" name="q1" id="q1a"> <label for="q1a">Two small magnets that are 4 inches apart</label><br>
+                <input type="radio" name="q1" id="q1b"> <label for="q1b">Two small magnets that are 2 inches apart</label>
+            </div>
+            <button class="interactive-btn" onclick="checkQ1()">Check Answer</button>
+            <div id="q1feedback" class="hidden"></div>
+        </div>
+        
+        <div class="question" id="question2">
+            <div class="question-text">2. Which pair will have a STRONGER magnetic force?</div>
+            <div class="options">
+                <input type="radio" name="q2" id="q2a"> <label for="q2a">Two large magnets that are 3 inches apart</label><br>
+                <input type="radio" name="q2" id="q2b"> <label for="q2b">Two small magnets that are 3 inches apart</label>
+            </div>
+            <button class="interactive-btn" onclick="checkQ2()">Check Answer</button>
+            <div id="q2feedback" class="hidden"></div>
+        </div>
+        
+        <div class="question" id="question3">
+            <div class="question-text">3. If you place two magnets with their North poles facing each other, what will happen?</div>
+            <div class="options">
+                <input type="radio" name="q3" id="q3a"> <label for="q3a">They will strongly attract each other</label><br>
+                <input type="radio" name="q3" id="q3b"> <label for="q3b">They will repel (push away from) each other</label>
+            </div>
+            <button class="interactive-btn" onclick="checkQ3()">Check Answer</button>
+            <div id="q3feedback" class="hidden"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>You're a Magnet Master!</h2>
+        <p>Now you know the secrets of magnetic forces:</p>
+        <ol>
+            <li>Closer magnets = stronger force</li>
+            <li>Bigger magnets = stronger force</li>
+            <li>Opposite poles attract, same poles repel</li>
+            <li>Magnets come in different shapes but always have poles</li>
+        </ol>
+        <p>Get ready to become magnetic force experts in your upcoming lesson!</p>
+        
+        <div class="fun-fact">
+            <h3>⭐ Super Magnet Challenge! ⭐</h3>
+            <p>Next time you use refrigerator magnets, try to predict how strong the magnetic force will be based on the magnet's size and distance!</p>
+        </div>
+    </div>
+    
+    <script>
+        function checkQ1() {
+            if(document.getElementById('q1b').checked) {
+                document.getElementById('q1feedback').innerHTML = "✅ Correct! Magnets that are closer together (2 inches) have a stronger force than those farther apart (4 inches).";
+                document.getElementById('q1feedback').style.color = "green";
+            } else if(document.getElementById('q1a').checked) {
+                document.getElementById('q1feedback').innerHTML = "❌ Not quite! Remember, the closer magnets are, the stronger their force. Try again!";
+                document.getElementById('q1feedback').style.color = "red";
+            } else {
+                document.getElementById('q1feedback').innerHTML = "Please select an answer!";
+                document.getElementById('q1feedback').style.color = "orange";
+            }
+            document.getElementById('q1feedback').classList.remove('hidden');
+        }
+        
+        function checkQ2() {
+            if(document.getElementById('q2a').checked) {
+                document.getElementById('q2feedback').innerHTML = "✅ Correct! Larger magnets typically create stronger magnetic forces than smaller ones at the same distance.";
+                document.getElementById('q2feedback').style.color = "green";
+            } else if(document.getElementById('q2b').checked) {
+                document.getElementById('q2feedback').innerHTML = "❌ Not quite! Remember, bigger magnets usually create stronger forces. Try again!";
+                document.getElementById('q2feedback').style.color = "red";
+            } else {
+                document.getElementById('q2feedback').innerHTML = "Please select an answer!";
+                document.getElementById('q2feedback').style.color = "orange";
+            }
+            document.getElementById('q2feedback').classList.remove('hidden');
+        }
+        
+        function checkQ3() {
+            if(document.getElementById('q3b').checked) {
+                document.getElementById('q3feedback').innerHTML = "✅ Correct! Same poles (like North-North) repel each other - they push away!";
+                document.getElementById('q3feedback').style.color = "green";
+            } else if(document.getElementById('q3a').checked) {
+                document.getElementById('q3feedback').innerHTML = "❌ Not quite! Remember, same poles repel (push away), while opposite poles attract. Try again!";
+                document.getElementById('q3feedback').style.color = "red";
+            } else {
+                document.getElementById('q3feedback').innerHTML = "Please select an answer!";
+                document.getElementById('q3feedback').style.color = "orange";
+            }
+            document.getElementById('q3feedback').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
