@@ -90,6 +90,35 @@
             background-color: rgba(128,128,128,0.5);
             z-index: -1;
         }
+        .attraction-arrows {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #009900;
+            font-weight: bold;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 15px;
+        }
+        .repulsion-arrows {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #cc0000;
+            font-weight: bold;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 15px;
+        }
+        .force-distance {
+            position: relative;
+        }
         .demo-container {
             display: flex;
             flex-wrap: wrap;
@@ -201,12 +230,16 @@
         <div class="demo-container">
             <div class="demo-box">
                 <h3 style="text-align: center;">Close Together = Strong Force</h3>
-                <div class="magnet-visual">
+                <div class="magnet-visual force-distance">
                     <div class="magnet" style="display: flex;">
                         <div class="magnet-pole north-pole">N</div>
                         <div class="magnet-pole south-pole">S</div>
                     </div>
-                    <div class="small-magnet" style="margin-left:10px; display: flex;">
+                    <div class="arrow-container attraction">
+                        <div class="arrow-left">→</div>
+                        <div class="arrow-right">←</div>
+                    </div>
+                    <div class="small-magnet" style="display: flex;">
                         <div class="magnet-pole north-pole">N</div>
                         <div class="magnet-pole south-pole">S</div>
                     </div>
@@ -214,16 +247,27 @@
                 <div class="attraction pulse">SUPER STRONG PULL!</div>
             </div>
             
-            <div class="demo-box">
+                            <div class="demo-box">
                 <h3 style="text-align: center;">Far Apart = Weak Force</h3>
-                <div class="magnet-visual">
-                    <div class="magnet" style="display: flex;">
-                        <div class="magnet-pole north-pole">N</div>
-                        <div class="magnet-pole south-pole">S</div>
+                <div class="magnet-visual force-distance">
+                    <div class="magnet-container" style="margin-right: 80px;">
+                        <div class="magnet" style="display: flex;">
+                            <div class="magnet-pole north-pole">N</div>
+                            <div class="magnet-pole south-pole">S</div>
+                        </div>
+                        <div class="force-arrows attraction">
+                            <div class="left-arrow arrow-weak">→</div>
+                        </div>
                     </div>
-                    <div class="small-magnet" style="margin-left:80px; display: flex;">
-                        <div class="magnet-pole north-pole">N</div>
-                        <div class="magnet-pole south-pole">S</div>
+                    
+                    <div class="magnet-container">
+                        <div class="small-magnet" style="display: flex;">
+                            <div class="magnet-pole north-pole">N</div>
+                            <div class="magnet-pole south-pole">S</div>
+                        </div>
+                        <div class="force-arrows attraction">
+                            <div class="right-arrow arrow-weak">←</div>
+                        </div>
                     </div>
                 </div>
                 <div class="attraction">weak pull</div>
@@ -244,12 +288,15 @@
         <div class="demo-container">
             <div class="demo-box">
                 <h3 style="text-align: center;">Big Magnets = Strong Force</h3>
-                <div class="magnet-visual">
-                    <div class="magnet" style="width:120px; height:60px; display: flex;">
+                <div class="magnet-visual force-distance">
+                    <div class="magnet" style="display: flex;">
                         <div class="magnet-pole north-pole">N</div>
                         <div class="magnet-pole south-pole">S</div>
                     </div>
-                    <div class="magnet" style="width:120px; height:60px; margin-left:20px; display: flex;">
+                    <div class="magnet-spacer"></div>
+                    <div class="attraction-arrow left">→</div>
+                    <div class="attraction-arrow right">←</div>
+                    <div class="small-magnet" style="display: flex;">
                         <div class="magnet-pole north-pole">N</div>
                         <div class="magnet-pole south-pole">S</div>
                     </div>
@@ -257,16 +304,27 @@
                 <div class="attraction pulse">SUPER STRONG PULL!</div>
             </div>
             
-            <div class="demo-box">
+                            <div class="demo-box">
                 <h3 style="text-align: center;">Small Magnets = Weaker Force</h3>
-                <div class="magnet-visual">
-                    <div class="small-magnet" style="display: flex;">
-                        <div class="magnet-pole north-pole">N</div>
-                        <div class="magnet-pole south-pole">S</div>
+                <div class="magnet-visual force-distance">
+                    <div class="magnet-container" style="margin-right: 20px;">
+                        <div class="small-magnet" style="display: flex; height: 30px;">
+                            <div class="magnet-pole north-pole">N</div>
+                            <div class="magnet-pole south-pole">S</div>
+                        </div>
+                        <div class="force-arrows attraction">
+                            <div class="left-arrow arrow-medium">→</div>
+                        </div>
                     </div>
-                    <div class="small-magnet" style="margin-left:20px; display: flex;">
-                        <div class="magnet-pole north-pole">N</div>
-                        <div class="magnet-pole south-pole">S</div>
+                    
+                    <div class="magnet-container">
+                        <div class="small-magnet" style="display: flex; height: 30px;">
+                            <div class="magnet-pole north-pole">N</div>
+                            <div class="magnet-pole south-pole">S</div>
+                        </div>
+                        <div class="force-arrows attraction">
+                            <div class="right-arrow arrow-medium">←</div>
+                        </div>
                     </div>
                 </div>
                 <div class="attraction">smaller pull</div>
@@ -280,31 +338,53 @@
         <p>Remember: <strong>Opposites attract, same poles repel!</strong></p>
         
         <div class="demo-container">
-            <div class="demo-box">
+                            <div class="demo-box">
                 <h3 style="text-align: center;">Same Poles = REPULSION</h3>
-                <div class="magnet-visual">
-                    <div class="magnet" style="display: flex;">
-                        <div class="magnet-pole north-pole">N</div>
-                        <div class="magnet-pole south-pole">S</div>
+                <div class="magnet-visual force-distance">
+                    <div class="magnet-container" style="margin-right: 40px;">
+                        <div class="magnet" style="display: flex;">
+                            <div class="magnet-pole north-pole">N</div>
+                            <div class="magnet-pole south-pole">S</div>
+                        </div>
+                        <div class="force-arrows repulsion">
+                            <div class="left-arrow arrow-medium">←</div>
+                        </div>
                     </div>
-                    <div class="magnet" style="margin-left:40px; display: flex;">
-                        <div class="magnet-pole north-pole">N</div>
-                        <div class="magnet-pole south-pole">S</div>
+                    
+                    <div class="magnet-container">
+                        <div class="magnet" style="display: flex; flex-direction: row-reverse;">
+                            <div class="magnet-pole north-pole">N</div>
+                            <div class="magnet-pole south-pole">S</div>
+                        </div>
+                        <div class="force-arrows repulsion">
+                            <div class="right-arrow arrow-medium">→</div>
+                        </div>
                     </div>
                 </div>
                 <div class="repulsion">They PUSH apart!</div>
             </div>
             
-            <div class="demo-box">
+                            <div class="demo-box">
                 <h3 style="text-align: center;">Opposite Poles = ATTRACTION</h3>
-                <div class="magnet-visual">
-                    <div class="magnet" style="display: flex;">
-                        <div class="magnet-pole north-pole">N</div>
-                        <div class="magnet-pole south-pole">S</div>
+                <div class="magnet-visual force-distance">
+                    <div class="magnet-container" style="margin-right: 10px;">
+                        <div class="magnet" style="display: flex;">
+                            <div class="magnet-pole north-pole">N</div>
+                            <div class="magnet-pole south-pole">S</div>
+                        </div>
+                        <div class="force-arrows attraction">
+                            <div class="left-arrow arrow-strong">→</div>
+                        </div>
                     </div>
-                    <div class="magnet" style="margin-left:10px; display: flex; flex-direction: row-reverse;">
-                        <div class="magnet-pole south-pole">S</div>
-                        <div class="magnet-pole north-pole">N</div>
+                    
+                    <div class="magnet-container">
+                        <div class="magnet" style="display: flex; flex-direction: row-reverse;">
+                            <div class="magnet-pole south-pole">S</div>
+                            <div class="magnet-pole north-pole">N</div>
+                        </div>
+                        <div class="force-arrows attraction">
+                            <div class="right-arrow arrow-strong">←</div>
+                        </div>
                     </div>
                 </div>
                 <div class="attraction">They PULL together!</div>
