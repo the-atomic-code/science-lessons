@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Masses & Weather Fronts: The Rising Spiral</title>
+    <title>Air Masses & Weather Fronts: The Dancing Spiral</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
             color: #333;
         }
         h1 {
-            color: #0066cc;
+            color: #ff8000;
             text-align: center;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 10px;
         }
         h2 {
-            color: #ff6600;
-            margin-top: 30px;
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
         }
         .activity-box {
-            background-color: #f5f5f5;
-            border-left: 5px solid #ff6600;
+            background-color: #f9f9f9;
+            border-left: 4px solid #ff8000;
             padding: 15px;
             margin: 20px 0;
-            border-radius: 0 5px 5px 0;
+        }
+        .science-box {
+            background-color: #e6f7ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .question-box {
+            background-color: #fff9e6;
+            border-left: 4px solid #ffcc00;
+            padding: 15px;
+            margin: 20px 0;
         }
         .materials {
-            background-color: #e6f7ff;
-            padding: 15px;
+            background-color: #f2f2f2;
+            padding: 10px;
             border-radius: 5px;
-            margin: 20px 0;
         }
-        .materials ul {
-            columns: 2;
+        ul.check {
+            list-style-type: none;
+        }
+        ul.check li:before {
+            content: "✓ ";
+            color: #ff8000;
         }
         .steps {
             counter-reset: step-counter;
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
         }
-        .step {
+        .steps li {
             counter-increment: step-counter;
-            margin-bottom: 15px;
-            position: relative;
+            margin-bottom: 10px;
             padding-left: 40px;
+            position: relative;
         }
-        .step:before {
+        .steps li:before {
             content: counter(step-counter);
-            background-color: #ff6600;
+            background-color: #0066cc;
             color: white;
             font-weight: bold;
             border-radius: 50%;
@@ -58,167 +72,146 @@
             position: absolute;
             left: 0;
         }
-        .science-corner {
-            background-color: #f0f8ff;
-            border: 1px solid #c3e6ff;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-        .question {
-            background-color: #ffeecc;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
-        }
-        .answer {
-            background-color: #f2f2f2;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 5px;
-        }
         .warning {
             color: #cc0000;
             font-weight: bold;
         }
-        .connection {
-            background-color: #e6ffe6;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
     </style>
 </head>
 <body>
-    <h1>Air Masses & Weather Fronts: The Rising Spiral</h1>
+    <h1>Air Masses & Weather Fronts: The Dancing Spiral</h1>
     
-    <p>Today we're going to explore one of the fundamental principles that drives our weather systems: <strong>warm air rises</strong>. This simple concept is behind the formation of air masses, weather fronts, winds, and many weather patterns we experience every day!</p>
+    <div class="science-box">
+        <h2>What's the Weather Today?</h2>
+        <p>Have you ever wondered why the weather changes? Sometimes it's sunny, then suddenly it's rainy or windy. These changes mostly happen because of something called <strong>air masses</strong> and <strong>weather fronts</strong>!</p>
+        <p>An air mass is a huge body of air with similar temperature and humidity throughout. When these air masses move and meet each other, they form weather fronts, which cause the weather to change—sometimes dramatically!</p>
+    </div>
+
+    <h2>The Science Behind the Magic</h2>
+    <p>Before we jump into our fun activity, let's understand a key principle that drives our weather: <strong>warm air rises</strong>. This simple fact is responsible for much of our planet's weather patterns!</p>
     
+    <div class="science-box">
+        <h3>Why Does Warm Air Rise?</h3>
+        <p>When air is heated, the molecules inside it start moving faster and spread out. This makes the warm air less dense (lighter) than the surrounding cooler air. Since it's lighter, warm air floats upward, while cooler, denser air sinks downward.</p>
+        <p>This movement creates <strong>convection cells</strong>, which are circulating patterns of air. On Earth, the uneven heating from the Sun creates these patterns on a grand scale, leading to winds and the movement of air masses around the planet.</p>
+    </div>
+
+    <h2>Let's Make a Dancing Spiral!</h2>
+    <p>Now, we'll demonstrate this important scientific concept with a simple but magical activity. We're going to create a paper spiral that dances in the rising warm air!</p>
+
     <div class="activity-box">
-        <h2>Warm Air Rises: Paper Plate Spiral Activity</h2>
-        <p>In this hands-on activity, we'll create a simple device that demonstrates how warm air rises above cooler air, which is the driving force behind many weather phenomena.</p>
-    </div>
-    
-    <div class="materials">
-        <h3>Materials You'll Need:</h3>
-        <ul>
-            <li>1 Paper Plate</li>
-            <li>1 Pencil</li>
-            <li>1 Pair of Scissors</li>
-            <li>1 Roll of string</li>
-            <li>1 Hot plate (or other heat source)</li>
-            <li><span class="warning">Adult supervision required!</span></li>
-        </ul>
-    </div>
-    
-    <h3>Instructions:</h3>
-    <div class="steps">
-        <div class="step">Draw a spiral on the paper plate with your pencil. Start from the edge and work your way toward the center, leaving about half an inch between each loop.</div>
-        <div class="step">With your scissors, carefully cut along the pencil line to make a spiral. Cut all the way through, following your spiral line from the edge to near the center (but leave the center intact).</div>
-        <div class="step">Poke a small hole in the center of the spiral with your pencil and tie a piece of string (about 12 inches long) through this hole.</div>
-        <div class="step"><span class="warning">With adult supervision only</span>, turn on the hot plate and let it warm up. The hotter it gets, the better it will work (but be careful not to set it too high).</div>
-        <div class="step">Hold your spiral by the string and slowly move it over the hot plate (not touching it), positioning it about 6-8 inches above. Watch what happens!</div>
-    </div>
-    
-    <div class="science-corner">
-        <h2>What's Happening? The Science Behind the Spiral</h2>
-        <p>Did your spiral start to spin? That's because you're witnessing convection in action! Here's what's happening:</p>
-        <ul>
-            <li>The hot plate is heating the air directly above it</li>
-            <li>As air warms up, its molecules spread farther apart, making it <strong>less dense</strong></li>
-            <li>Less dense air rises upward (like a hot air balloon)</li>
-            <li>This rising air pushes past your paper spiral, causing it to rotate</li>
-            <li>The faster your spiral spins, the stronger the warm air current!</li>
-        </ul>
-    </div>
-    
-    <div class="connection">
-        <h2>Connecting to Weather: From Spiral to Global Weather</h2>
-        <p>The same principle that makes your spiral spin is responsible for creating weather patterns across our planet! Let's explore how this small demonstration connects to global weather systems:</p>
+        <h3>Warm Air Rises DIY Activity</h3>
+        <p><strong>Duration:</strong> 15-30 minutes | <strong>Difficulty:</strong> Easy | <strong>Cost:</strong> $0-$5</p>
         
+        <h4>Materials You'll Need:</h4>
+        <div class="materials">
+            <ul class="check">
+                <li>1 Paper Plate</li>
+                <li>1 Pencil</li>
+                <li>1 Pair of Scissors</li>
+                <li>1 Roll of string</li>
+                <li>1 Hot plate or other heat source</li>
+                <li><span class="warning">Adult supervision required!</span></li>
+            </ul>
+        </div>
+        
+        <h4>Instructions:</h4>
+        <ol class="steps">
+            <li>Draw a spiral on the paper plate with your pencil. Start from the outer edge and work your way to the center.</li>
+            <li>With your scissors, carefully cut along the pencil line to make a spiral. Be careful not to cut yourself!</li>
+            <li>Poke a small hole in the center of the spiral with your pencil.</li>
+            <li>Tie a piece of string (about 12 inches long) through the hole at the center of your spiral.</li>
+            <li>With adult supervision, turn on the hot plate and let it warm up. The hotter it gets, the better your spiral will dance! <span class="warning">Be careful! Don't touch the hot plate!</span></li>
+            <li>Hold your spiral by the string and slowly position it above the hot plate (not touching it, about 6-12 inches above).</li>
+            <li>Watch the magic happen as your spiral starts to spin!</li>
+        </ol>
+    </div>
+
+    <div class="science-box">
+        <h3>How It Works</h3>
+        <p>When you hold your paper spiral above the hot plate, the air near the hot plate gets heated. This warm air becomes less dense and starts to rise. As this rising warm air passes through your spiral, it pushes against the paper and causes it to spin!</p>
+        <p>This same principle works in our atmosphere. The sun heats the Earth unevenly, creating areas of warm and cool air. The warm air rises, and as it does, it can create winds and contribute to the movement of air masses.</p>
+    </div>
+
+    <h2>From Our Activity to Real Weather</h2>
+    <p>Let's explore how this simple demonstration connects to the complex weather patterns we experience:</p>
+    
+    <div class="science-box">
         <h3>Air Masses</h3>
-        <p>An air mass is a large body of air with similar temperature and humidity throughout. Our Earth has about 20 different air masses that form in specific regions:</p>
+        <p>Our planet has about 20 different air masses. They take on characteristics based on where they form:</p>
         <ul>
-            <li><strong>Polar regions</strong> → cold air masses</li>
-            <li><strong>Equatorial regions</strong> → warm air masses</li>
-            <li><strong>Oceans</strong> → wet air masses</li>
-            <li><strong>Continents</strong> → dry air masses</li>
+            <li>Air masses that form over the poles tend to be <strong>cold</strong></li>
+            <li>Air masses that form near the equator tend to be <strong>warm</strong></li>
+            <li>Air masses that form over oceans tend to be <strong>wet</strong></li>
+            <li>Air masses that form over land tend to be <strong>dry</strong></li>
         </ul>
-        <p>Just like the air above your hot plate, these air masses have different densities based on their temperature. The warmer ones tend to rise, while the cooler ones sink.</p>
-        
+        <p>These air masses don't stay in one place—they move around due to prevailing winds (winds that blow mostly in one direction).</p>
+    </div>
+
+    <div class="science-box">
         <h3>Weather Fronts</h3>
-        <p>When different air masses move and meet each other, they form <strong>weather fronts</strong> - the boundaries between air masses. These fronts are where dramatic weather changes often occur. The main types include:</p>
+        <p>When different air masses meet, they form boundaries called <strong>weather fronts</strong>, which often bring changes in the weather:</p>
         <ul>
-            <li><strong>Cold Front:</strong> When a cold air mass pushes under a warm air mass (often causing thunderstorms)</li>
-            <li><strong>Warm Front:</strong> When a warm air mass slides over a cold air mass (often bringing steady rain)</li>
-            <li><strong>Stationary Front:</strong> When two air masses meet but neither moves the other</li>
-            <li><strong>Occluded Front:</strong> When a cold front catches up to a warm front (often causing heavy precipitation)</li>
+            <li><strong>Cold Front:</strong> Occurs when a cold air mass pushes a warm air mass up and out of the way. This often brings thunderstorms followed by cooler temperatures.</li>
+            <li><strong>Warm Front:</strong> Occurs when a warm air mass pushes a cold air mass out of the way. This usually brings gentle rain followed by warmer temperatures.</li>
+            <li><strong>Stationary Front:</strong> Forms when two air masses meet but neither one pushes the other out of the way.</li>
+            <li><strong>Occluded Front:</strong> Happens when an air mass gets separated from the ground by a fast-moving cold front, often resulting in heavy rain.</li>
         </ul>
     </div>
-    
-    <div class="science-corner">
-        <h2>The Bigger Picture: Global Convection</h2>
-        <p>Your spinning spiral demonstrates convection on a small scale, but this same process happens all over Earth, causing:</p>
-        <ul>
-            <li><strong>Wind:</strong> Air moving from high-pressure areas (where cool air sinks) to low-pressure areas (where warm air rises)</li>
-            <li><strong>Cloud Formation:</strong> Rising warm air cools as it reaches higher altitudes, causing water vapor to condense</li>
-            <li><strong>Precipitation:</strong> When water droplets in clouds become too heavy to stay suspended</li>
-            <li><strong>Storms:</strong> When dramatic differences in air pressure create intense weather systems</li>
-        </ul>
-        <p>The uneven heating of Earth by the sun (stronger at the equator, weaker at the poles) creates a global convection system that drives our planet's weather patterns - just like the hot plate drives your spiral!</p>
+
+    <div class="question-box">
+        <h3>Think About It!</h3>
+        <ol>
+            <li><strong>Question:</strong> In our activity, what represents the warm air rising in the Earth's atmosphere?<br>
+            <strong>Answer:</strong> The heated air from the hot plate represents warm air rising in the Earth's atmosphere.</li>
+            
+            <li><strong>Question:</strong> Why did your spiral start spinning when held above the hot plate?<br>
+            <strong>Answer:</strong> The spiral spins because the hot plate heats the air, making it less dense. This warm air rises and pushes against the paper spiral, causing it to rotate.</li>
+            
+            <li><strong>Question:</strong> How is the spinning of your paper spiral similar to how winds form on Earth?<br>
+            <strong>Answer:</strong> Both involve the movement of air due to differences in temperature. On Earth, the uneven heating of air creates pressure differences that lead to wind, similar to how the rising warm air from the hot plate creates motion in our spiral.</li>
+            
+            <li><strong>Question:</strong> What might happen if you used a colder heat source for this experiment?<br>
+            <strong>Answer:</strong> With a colder heat source, less air would be heated, creating weaker rising currents. The spiral would spin more slowly or might not spin at all.</li>
+            
+            <li><strong>Question:</strong> If a cold air mass from Canada meets a warm air mass from the Gulf of Mexico over the United States, what type of weather front might form and what weather might result?<br>
+            <strong>Answer:</strong> A cold front would likely form as the denser cold air mass pushes the warm air mass upward. This could result in thunderstorms, followed by cooler temperatures after the front passes.</li>
+        </ol>
     </div>
-    
-    <h2>Think About It: Discussion Questions</h2>
-    
-    <div class="question">
-        <p><strong>Q1: How is the paper plate spiral activity similar to what happens during a thunderstorm?</strong></p>
-        <div class="answer">
-            <p><strong>Answer:</strong> In both cases, warm air rises rapidly. In our activity, the hot plate heats the air, making it less dense, causing it to rise and spin our spiral. In a thunderstorm, the sun heats the ground, which warms the air above it. This warm air rises rapidly through cooler air above, creating powerful updrafts. As this warm air rises higher, it cools and condenses to form thunderstorm clouds. The rapid rising motion in both cases is driven by the same principle: warm air is less dense than cool air.</p>
-        </div>
-    </div>
-    
-    <div class="question">
-        <p><strong>Q2: If you held your spiral over an ice pack instead of a hot plate, what do you think would happen? Why?</strong></p>
-        <div class="answer">
-            <p><strong>Answer:</strong> Over an ice pack, your spiral would likely not spin, or might spin in the opposite direction. The ice pack would cool the air directly above it, making that air more dense. This cool, dense air would sink downward toward the floor, potentially creating a very weak downward movement of air. Since downward air movement is usually gentler than the strong upward movement of heated air, the effect would be much less noticeable than with the hot plate.</p>
-        </div>
-    </div>
-    
-    <div class="question">
-        <p><strong>Q3: How would weather forecasters use their knowledge of air masses and fronts to predict tomorrow's weather?</strong></p>
-        <div class="answer">
-            <p><strong>Answer:</strong> Weather forecasters track the movement of air masses using weather stations, satellites, and weather balloons. By identifying the characteristics (temperature, humidity) of approaching air masses and observing how they're moving, meteorologists can predict when and where fronts will form. For example, if they see a cold air mass moving toward a region with warm air, they can predict a cold front will form, likely bringing thunderstorms, followed by cooler temperatures. The greater the temperature difference between the colliding air masses, the more dramatic the weather changes will be.</p>
-        </div>
-    </div>
-    
-    <div class="question">
-        <p><strong>Q4: How might our spiral activity work differently if we tried it outdoors on a windy day versus indoors?</strong></p>
-        <div class="answer">
-            <p><strong>Answer:</strong> Outdoors on a windy day, our spiral would be affected by both the rising warm air from the hot plate AND the horizontal movement of the wind. The spiral might spin erratically or tilt to one side as these different air movements compete. This actually illustrates how real weather systems are complex - they're affected by both convection (vertical air movement) and advection (horizontal air movement). Indoors without wind, we see a "pure" demonstration of convection alone, making the scientific principle clearer to observe.</p>
-        </div>
-    </div>
-    
-    <h2>Extension Activities</h2>
+
+    <h2>Weather Forecasting</h2>
+    <p>Meteorologists (weather scientists) track the movement of air masses and weather fronts to predict what the weather will be like in the coming days. They use special symbols on weather maps to show different types of fronts:</p>
     <ul>
-        <li><strong>Temperature Testing:</strong> Try changing the heat setting on your hot plate. Does the spiral spin faster when the temperature is higher? Why?</li>
-        <li><strong>Design Challenge:</strong> Can you modify your spiral design to make it spin faster? Try different paper weights, spiral widths, or materials.</li>
-        <li><strong>Weather Tracking:</strong> For one week, check the daily weather forecast for mentions of fronts (cold front, warm front). Record the type of front and the weather that follows it. Do you notice any patterns?</li>
-        <li><strong>Local Air Mass Research:</strong> Research what types of air masses most commonly affect your region's weather. Where do they originate from?</li>
+        <li>A <strong>cold front</strong> is shown as a blue line with triangles pointing in the direction the front is moving</li>
+        <li>A <strong>warm front</strong> is shown as a red line with semicircles pointing in the direction the front is moving</li>
     </ul>
-    
-    <div class="science-corner">
-        <h2>Vocabulary Review</h2>
+    <p>Next time you watch a weather forecast, see if you can spot these symbols and understand what they mean for your local weather!</p>
+
+    <div class="activity-box">
+        <h3>Extension Activities</h3>
+        <ol>
+            <li>Try making spirals of different sizes or shapes. Do they spin differently?</li>
+            <li>Test your spiral above different heat sources (with adult supervision). Which works best?</li>
+            <li>Make a weather journal and record the temperature, cloud cover, and wind direction each day for a week. Can you identify any patterns or weather fronts passing through?</li>
+            <li>Create a model of a cold front using blue and red construction paper to show how cold air pushes under warm air.</li>
+        </ol>
+    </div>
+
+    <div class="science-box">
+        <h3>Key Vocabulary</h3>
         <ul>
-            <li><strong>Air Mass:</strong> A large body of air with roughly the same temperature and humidity throughout</li>
-            <li><strong>Weather Front:</strong> The boundary between two air masses</li>
-            <li><strong>Convection:</strong> The circulation of air due to heating and cooling of molecules</li>
-            <li><strong>Humidity:</strong> A measure of how much water vapor is in the air</li>
-            <li><strong>Prevailing Winds:</strong> Winds that blow mostly in one direction, moving air masses</li>
-            <li><strong>Cold Front:</strong> A type of weather front where cold air masses overtake warm air masses</li>
-            <li><strong>Warm Front:</strong> A type of weather front where warm air masses slide over cold air masses</li>
+            <li><strong>Air Mass:</strong> A large body of air with roughly the same temperature and humidity.</li>
+            <li><strong>Weather Front:</strong> The boundary between two air masses.</li>
+            <li><strong>Convection Cell:</strong> The circulation of air due to heating and cooling of molecules.</li>
+            <li><strong>Prevailing Winds:</strong> Winds that blow mostly in one direction, moving air masses.</li>
+            <li><strong>Humidity:</strong> A measure of how much water vapor is in the air.</li>
+            <li><strong>Cold Front:</strong> A type of weather front where cold air masses overtake warm air masses.</li>
+            <li><strong>Warm Front:</strong> A type of weather front where warm air masses overtake cold air masses.</li>
         </ul>
     </div>
-    
-    <p>Remember, the simple principle you observed today - warm air rises - is driving weather patterns all around our planet, from gentle breezes to powerful hurricanes. Next time you see clouds forming or feel the wind change direction, think about those air masses moving and interacting, just like the air that made your spiral spin!</p>
+
+    <h2>Conclusion</h2>
+    <p>Today, we've seen how a simple principle—warm air rises—can explain both our spinning paper spiral and the complex weather patterns of our planet. The next time you feel the wind or notice a change in the weather, remember that it's all connected to the movement of air masses and the formation of weather fronts!</p>
+
 </body>
 </html>
