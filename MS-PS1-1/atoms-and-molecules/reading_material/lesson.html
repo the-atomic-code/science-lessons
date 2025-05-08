@@ -86,45 +86,35 @@
             margin-top: 0;
             color: #e67e22;
         }
-        .molecule-diagram {
-            text-align: center;
-            margin: 20px 0;
-            font-family: monospace;
-            white-space: pre;
-            line-height: 1.2;
-            font-size: 14px;
-        }
         .image-container {
             text-align: center;
             margin: 20px 0;
         }
         .image-container img {
             max-width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
             width: 400px;
         }
         .image-caption {
             font-style: italic;
-            color: #555;
             margin-top: 8px;
-            font-size: 0.9em;
+            color: #666;
         }
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
         }
         .comparison-table th {
-            background-color: #3498db;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .comparison-table td {
-            padding: 8px;
-            border: 1px solid #ddd;
+            background-color: #f2f2f2;
+            font-weight: bold;
         }
         .comparison-table tr:nth-child(even) {
             background-color: #f9f9f9;
@@ -142,11 +132,6 @@
     
     <p>Everything in our universe is made of matter, and all matter is made of tiny particles called atoms. But what exactly are atoms made of?</p>
     
-    <div class="image-container">
-        <img src="atom_outline.jpg" alt="Basic outline of an atom">
-        <p class="image-caption">Basic outline of an atomic structure showing the nucleus and electron orbits</p>
-    </div>
-    
     <p>All atoms are composed of three fundamental subatomic particles:</p>
     
     <ul>
@@ -156,11 +141,16 @@
     </ul>
     
     <div class="image-container">
-        <img src="labeled_atomic_structure.jpg" alt="Labeled atomic structure">
-        <p class="image-caption">Detailed view of an atom with labeled parts showing protons, neutrons, and electrons</p>
+        <img src="atom_outline.jpg" alt="Basic atomic structure outline">
+        <div class="image-caption">Basic outline of an atom showing the nucleus and electron orbits</div>
     </div>
     
     <p>The center of the atom is called the <strong>nucleus</strong>. This is where protons and neutrons clump together. Electrons orbit around the nucleus at great distances relative to the size of the nucleus.</p>
+    
+    <div class="image-container">
+        <img src="labeled_atomic_structure.jpg" alt="Labeled atomic structure">
+        <div class="image-caption">Detailed labeled structure of an atom showing protons, neutrons, and electrons</div>
+    </div>
     
     <div class="fun-fact">
         Most of an atom is empty space! If an atom were the size of a football stadium, the nucleus would be about the size of a pea in the center, with electrons like tiny gnats flying around the outer stands.
@@ -180,8 +170,8 @@
     <p>Special microscopes called Scanning Tunneling Microscopes (developed in the 1980s) are needed to visualize individual atoms. If you looked at iron filings with one of these microscopes, you would see tiny spheres - these are the individual iron atoms!</p>
     
     <div class="image-container">
-        <img src="atoms_from_microscope.jpg" alt="Atoms viewed through a Scanning Tunneling Microscope">
-        <p class="image-caption">Individual atoms as seen through a Scanning Tunneling Microscope</p>
+        <img src="atoms_from_microscope.jpg" alt="Atoms viewed under microscope">
+        <div class="image-caption">Atoms viewed through a Scanning Tunneling Microscope showing their spherical nature</div>
     </div>
     
     <div class="fun-fact">
@@ -204,7 +194,7 @@
     
     <div class="image-container">
         <img src="periodic_table.jpg" alt="Periodic Table of Elements">
-        <p class="image-caption">The Periodic Table of Elements organizes all known elements based on their properties</p>
+        <div class="image-caption">The Periodic Table of Elements organizing all known elements</div>
     </div>
     
     <p>The smallest unit of an element that still maintains the properties of that element is an <strong>atom</strong>. For example, the smallest piece of gold that is still gold is a gold atom.</p>
@@ -244,7 +234,89 @@
         <p>For each element, write down how many protons and electrons it has.</p>
     </div>
     
-    <h2>5. From Atoms to Molecules</h2>
+    <h2>5. Understanding Elements, Atoms, Molecules, Compounds, and Mixtures</h2>
+    
+    <p>Let's compare these important concepts in chemistry:</p>
+    
+    <div class="image-container">
+        <img src="atom_molecule_compound_mixture.jpg" alt="Comparison of atoms, molecules, compounds, and mixtures">
+        <div class="image-caption">Visual comparison of atoms, molecules, compounds, and mixtures</div>
+    </div>
+    
+    <table class="comparison-table">
+        <tr>
+            <th>Concept</th>
+            <th>Definition</th>
+            <th>Examples</th>
+            <th>Key Characteristics</th>
+        </tr>
+        <tr>
+            <td>Element</td>
+            <td>A pure substance made of only one type of atom</td>
+            <td>Oxygen (O), Gold (Au), Carbon (C)</td>
+            <td>
+                - Cannot be broken down by chemical means<br>
+                - Listed on the periodic table<br>
+                - Has a unique atomic number
+            </td>
+        </tr>
+        <tr>
+            <td>Atom</td>
+            <td>The smallest unit of an element that maintains its chemical properties</td>
+            <td>An oxygen atom, a gold atom</td>
+            <td>
+                - Contains protons, neutrons, and electrons<br>
+                - Too small to see with a regular microscope<br>
+                - The basic building block of all matter
+            </td>
+        </tr>
+        <tr>
+            <td>Molecule</td>
+            <td>Two or more atoms bonded together</td>
+            <td>O₂, H₂O, CO₂</td>
+            <td>
+                - Can contain atoms of the same or different elements<br>
+                - Has specific three-dimensional arrangement<br>
+                - Smallest unit of a compound
+            </td>
+        </tr>
+        <tr>
+            <td>Compound</td>
+            <td>A substance formed when two or more different elements chemically combine</td>
+            <td>Water (H₂O), Table salt (NaCl), Glucose (C₆H₁₂O₆)</td>
+            <td>
+                - Has properties different from its constituent elements<br>
+                - Has a fixed ratio of atoms<br>
+                - Can be broken down by chemical means
+            </td>
+        </tr>
+        <tr>
+            <td>Mixture</td>
+            <td>A combination of two or more substances that are not chemically combined</td>
+            <td>Salt water, air, soil</td>
+            <td>
+                - Components retain their individual properties<br>
+                - Can be separated by physical means<br>
+                - Can have variable composition
+            </td>
+        </tr>
+    </table>
+    
+    <p><strong>Important relationships:</strong></p>
+    <ul>
+        <li>All compounds are molecules, but not all molecules are compounds. For example, O₂ is a molecule but not a compound because it contains only one element.</li>
+        <li>Compounds and elements are both pure substances, while mixtures are not.</li>
+        <li>Mixtures can contain elements, compounds, or both.</li>
+    </ul>
+    
+    <div class="check-understanding">
+        <h3>Quick Check:</h3>
+        <p>What's the difference between an element and a compound?</p>
+        <p>Can a molecule contain only one type of element? Explain with an example.</p>
+        <p>How is a mixture different from a compound?</p>
+    </div>
+    
+    <h2>6. From Atoms to Molecules</h2>
     
     <p>When two or more atoms bond together, they form a <strong>molecule</strong>. A molecule is the smallest particle of a compound that still maintains the properties of that compound.</p>
     
@@ -257,18 +329,9 @@
         <li><strong>Hemoglobin</strong>: Contains thousands of atoms arranged in a specific structure</li>
     </ul>
     
-    <div class="molecule-diagram">
-        <pre>
-          H   H
-           \ /
-            O     Water molecule (H₂O)
-        </pre>
-    </div>
-    
-    <div class="molecule-diagram">
-        <pre>
-            O=C=O     Carbon dioxide molecule (CO₂)
-        </pre>
+    <div class="image-container">
+        <img src="water_oxygen_carbondioxide_molecules.jpg" alt="Models of water, oxygen, and carbon dioxide molecules">
+        <div class="image-caption">Models of water (H₂O), oxygen (O₂), and carbon dioxide (CO₂) molecules showing their atomic structure</div>
     </div>
     
     <div class="fun-fact">
@@ -280,89 +343,6 @@
         <p>What is a molecule?</p>
         <p>How many hydrogen and oxygen atoms are in a water molecule?</p>
         <p>What is the chemical formula for table sugar?</p>
-    </div>
-
-    <h2>6. Comparing Elements, Atoms, Molecules, Compounds, and Mixtures</h2>
-    
-    <p>Let's compare these essential concepts to understand how matter is organized from simplest to most complex:</p>
-    
-    <div class="image-container">
-        <img src="atom_molecule_compound_mixture.jpg" alt="Comparison of atom, molecule, compound, and mixture">
-        <p class="image-caption">Visual comparison of atoms, molecules, compounds, and mixtures</p>
-    </div>
-    
-    <table class="comparison-table">
-        <tr>
-            <th>Concept</th>
-            <th>Definition</th>
-            <th>Examples</th>
-            <th>Key Characteristics</th>
-        </tr>
-        <tr>
-            <td><strong>Atom</strong></td>
-            <td>The smallest unit of an element that maintains its chemical properties</td>
-            <td>A single atom of carbon (C), oxygen (O), gold (Au)</td>
-            <td>
-                - Made of protons, neutrons, and electrons<br>
-                - Cannot be broken down by chemical means<br>
-                - Identified by its number of protons
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Element</strong></td>
-            <td>A pure substance consisting of only one type of atom</td>
-            <td>Carbon (C), oxygen (O), gold (Au)</td>
-            <td>
-                - Contains only one type of atom<br>
-                - Found on the periodic table<br>
-                - Has unique chemical properties
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Molecule</strong></td>
-            <td>Two or more atoms chemically bonded together</td>
-            <td>H<sub>2</sub>O, O<sub>2</sub>, CO<sub>2</sub></td>
-            <td>
-                - Smallest unit of a compound or element that can exist independently<br>
-                - Formed by chemical bonds<br>
-                - Can consist of same or different types of atoms
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Compound</strong></td>
-            <td>A substance formed when two or more different elements combine chemically</td>
-            <td>Water (H<sub>2</sub>O), table salt (NaCl), carbon dioxide (CO<sub>2</sub>)</td>
-            <td>
-                - Contains different types of atoms<br>
-                - Has properties different from its component elements<br>
-                - Has a fixed ratio of elements
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Mixture</strong></td>
-            <td>Two or more substances physically combined but not chemically bonded</td>
-            <td>Salt water, salad, granite, air</td>
-            <td>
-                - Can be separated by physical means<br>
-                - No chemical bonds between components<br>
-                - Properties are a blend of its components<br>
-                - Components can be in any proportion
-            </td>
-        </tr>
-    </table>
-    
-    <p><strong>Key Differences:</strong></p>
-    <ul>
-        <li>An <strong>element</strong> consists of only one type of atom, while a <strong>compound</strong> consists of different types of atoms chemically bonded together.</li>
-        <li>A <strong>molecule</strong> can be made of the same type of atoms (like O<sub>2</sub>) or different types (like H<sub>2</sub>O). When it consists of different types, it forms a compound.</li>
-        <li>In a <strong>mixture</strong>, substances are physically combined but can be separated without chemical changes. In a <strong>compound</strong>, elements are chemically bonded and can only be separated through chemical reactions.</li>
-    </ul>
-
-    <div class="check-understanding">
-        <h3>Quick Check:</h3>
-        <p>Is oxygen gas (O<sub>2</sub>) an element, a compound, or a mixture?</p>
-        <p>How does a compound differ from a mixture?</p>
-        <p>Can all molecules be classified as compounds? Why or why not?</p>
     </div>
 
     <h2>7. Extended Structures vs. Individual Molecules</h2>
@@ -417,7 +397,7 @@
     
     <div class="image-container">
         <img src="chemist_in_lab.jpg" alt="Chemist working in a laboratory">
-        <p class="image-caption">Chemists use their knowledge of atomic structure to create new molecules and compounds</p>
+        <div class="image-caption">A chemist working in a laboratory studying molecular structures</div>
     </div>
     
     <p>For example, biochemists have used their understanding of molecules to produce insulin for people with diabetes. This process involves creating complex molecules that function like the insulin naturally produced by the human body.</p>
@@ -495,7 +475,7 @@
         </tr>
         <tr>
             <td>Mixture</td>
-            <td>Two or more substances physically combined but not chemically bonded</td>
+            <td>A combination of two or more substances that are not chemically combined</td>
         </tr>
         <tr>
             <td>Atomic Number</td>
@@ -519,8 +499,8 @@
             <li>The periodic table organizes all known elements and provides information about their atomic structure</li>
             <li>The atomic number tells us how many protons and electrons are in an atom</li>
             <li>Molecules form when two or more atoms bond together</li>
-            <li>Compounds are formed when different types of atoms bond together</li>
-            <li>Mixtures are physical combinations of substances that can be separated without chemical changes</li>
+            <li>Compounds are formed when atoms of different elements bond together</li>
+            <li>Mixtures are physical combinations of substances that retain their individual properties</li>
             <li>Molecules can range from simple (like H<sub>2</sub>O) to extremely complex (like proteins)</li>
             <li>The arrangement of atoms in a molecule determines its properties</li>
         </ul>
@@ -534,7 +514,7 @@
             <li>How might changing the number of hydrogen atoms in a water molecule affect its properties?</li>
             <li>Why are metals typically good conductors of electricity based on their atomic structure?</li>
             <li>How does the molecular structure of sugar (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) contribute to its properties as a solid that dissolves in water?</li>
-            <li>Classify these as elements, compounds, or mixtures: gold, carbon dioxide, air, table salt, iron filings in sand.</li>
+            <li>Classify the following as elements, compounds, or mixtures: pure gold, air, water, salt water, carbon dioxide.</li>
         </ol>
     </div>
 </body>
