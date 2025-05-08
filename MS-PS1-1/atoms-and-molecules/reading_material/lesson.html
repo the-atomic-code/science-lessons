@@ -93,15 +93,29 @@
         .image-container img {
             max-width: 100%;
             height: auto;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             width: 400px;
         }
-        .image-caption {
+        .image-container .caption {
             font-style: italic;
             margin-top: 8px;
-            color: #666;
+            color: #555;
+        }
+        .periodic-table-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .periodic-table-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .periodic-table-container .caption {
+            font-style: italic;
+            margin-top: 8px;
+            color: #555;
         }
         .comparison-table {
             width: 100%;
@@ -111,10 +125,11 @@
         .comparison-table th, .comparison-table td {
             border: 1px solid #ddd;
             padding: 10px;
+            text-align: left;
         }
         .comparison-table th {
             background-color: #f2f2f2;
-            font-weight: bold;
+            color: #2980b9;
         }
         .comparison-table tr:nth-child(even) {
             background-color: #f9f9f9;
@@ -141,15 +156,15 @@
     </ul>
     
     <div class="image-container">
-        <img src="atom_outline.jpg" alt="Basic atomic structure outline">
-        <div class="image-caption">Basic outline of an atom showing the nucleus and electron orbits</div>
+        <img src="atom_outline.jpg" alt="Basic atomic structure diagram">
+        <p class="caption">Basic outline of an atom showing electrons orbiting a nucleus</p>
     </div>
     
     <p>The center of the atom is called the <strong>nucleus</strong>. This is where protons and neutrons clump together. Electrons orbit around the nucleus at great distances relative to the size of the nucleus.</p>
     
     <div class="image-container">
-        <img src="labeled_atomic_structure.jpg" alt="Labeled atomic structure">
-        <div class="image-caption">Detailed labeled structure of an atom showing protons, neutrons, and electrons</div>
+        <img src="labeled_atomic_structure.jpg" alt="Labeled atomic structure showing protons, neutrons, and electrons">
+        <p class="caption">Labeled atomic structure showing protons (positive), neutrons (neutral), and electrons (negative)</p>
     </div>
     
     <div class="fun-fact">
@@ -170,15 +185,65 @@
     <p>Special microscopes called Scanning Tunneling Microscopes (developed in the 1980s) are needed to visualize individual atoms. If you looked at iron filings with one of these microscopes, you would see tiny spheres - these are the individual iron atoms!</p>
     
     <div class="image-container">
-        <img src="atoms_from_microscope.jpg" alt="Atoms viewed under microscope">
-        <div class="image-caption">Atoms viewed through a Scanning Tunneling Microscope showing their spherical nature</div>
+        <img src="atoms_from_microscope.jpg" alt="Atoms viewed through a scanning tunneling microscope">
+        <p class="caption">Individual atoms viewed through a Scanning Tunneling Microscope</p>
     </div>
     
     <div class="fun-fact">
         There are more atoms in a single glass of water than there are glasses of water in all the oceans of the Earth combined!
     </div>
     
-    <h2>3. Elements: Nature's Building Blocks</h2>
+    <h2>3. Understanding Matter: Elements, Compounds, and Mixtures</h2>
+    
+    <p>To understand matter, we need to know the relationship between atoms, elements, molecules, compounds, and mixtures:</p>
+    
+    <div class="image-container">
+        <img src="atom_molecule_compound_mixture.jpg" alt="Comparison of atoms, molecules, compounds, and mixtures">
+        <p class="caption">Visual comparison of atoms, molecules, compounds, and mixtures</p>
+    </div>
+    
+    <table class="comparison-table">
+        <tr>
+            <th>Concept</th>
+            <th>Definition</th>
+            <th>Examples</th>
+        </tr>
+        <tr>
+            <td><strong>Atom</strong></td>
+            <td>The smallest unit of an element that maintains the properties of that element. Cannot be broken down further by chemical means.</td>
+            <td>A single carbon atom, a single gold atom</td>
+        </tr>
+        <tr>
+            <td><strong>Element</strong></td>
+            <td>A pure substance made up of only one type of atom.</td>
+            <td>Carbon (C), Oxygen (O), Gold (Au), Iron (Fe)</td>
+        </tr>
+        <tr>
+            <td><strong>Molecule</strong></td>
+            <td>Two or more atoms bonded together, can be the same or different elements.</td>
+            <td>O₂ (oxygen gas), H₂O (water), CO₂ (carbon dioxide)</td>
+        </tr>
+        <tr>
+            <td><strong>Compound</strong></td>
+            <td>A pure substance composed of two or more different elements chemically combined in fixed ratios.</td>
+            <td>Water (H₂O), table sugar (C₁₂H₂₂O₁₁), salt (NaCl)</td>
+        </tr>
+        <tr>
+            <td><strong>Mixture</strong></td>
+            <td>Two or more substances physically combined, but not chemically bonded. Each substance retains its own properties and can be separated by physical means.</td>
+            <td>Salt water, soil, air, salad</td>
+        </tr>
+    </table>
+    
+    <p><strong>Key differences:</strong></p>
+    <ul>
+        <li>Elements contain only one type of atom; compounds contain multiple types of atoms chemically bonded together</li>
+        <li>All compounds are molecules, but not all molecules are compounds (e.g., O₂ is a molecule but not a compound because it contains only one element)</li>
+        <li>Compounds have fixed ratios of elements; mixtures can have variable compositions</li>
+        <li>Mixtures can be separated by physical means; compounds can only be separated by chemical reactions</li>
+    </ul>
+    
+    <h2>4. Elements: Nature's Building Blocks</h2>
     
     <p>An <strong>element</strong> is a pure substance that consists of only one type of atom. Each element has unique properties and can't be broken down into simpler substances by normal chemical means.</p>
     
@@ -192,9 +257,9 @@
         <li>Iron (Fe)</li>
     </ul>
     
-    <div class="image-container">
-        <img src="periodic_table.jpg" alt="Periodic Table of Elements">
-        <div class="image-caption">The Periodic Table of Elements organizing all known elements</div>
+    <div class="periodic-table-container">
+        <img src="periodic_table.jpg" alt="The Periodic Table of Elements" style="width: 95%;">
+        <p class="caption">The Periodic Table of Elements organizes all known elements by their properties and atomic structure</p>
     </div>
     
     <p>The smallest unit of an element that still maintains the properties of that element is an <strong>atom</strong>. For example, the smallest piece of gold that is still gold is a gold atom.</p>
@@ -206,7 +271,7 @@
         <p>Where can you find all the known elements organized?</p>
     </div>
 
-    <h2>4. Identifying Atoms Using the Periodic Table</h2>
+    <h2>5. Identifying Atoms Using the Periodic Table</h2>
     
     <p>Each element on the periodic table has a unique number of protons, neutrons, and electrons. We can use the periodic table to find this information.</p>
     
@@ -234,88 +299,6 @@
         <p>For each element, write down how many protons and electrons it has.</p>
     </div>
     
-    <h2>5. Understanding Elements, Atoms, Molecules, Compounds, and Mixtures</h2>
-    
-    <p>Let's compare these important concepts in chemistry:</p>
-    
-    <div class="image-container">
-        <img src="atom_molecule_compound_mixture.jpg" alt="Comparison of atoms, molecules, compounds, and mixtures">
-        <div class="image-caption">Visual comparison of atoms, molecules, compounds, and mixtures</div>
-    </div>
-    
-    <table class="comparison-table">
-        <tr>
-            <th>Concept</th>
-            <th>Definition</th>
-            <th>Examples</th>
-            <th>Key Characteristics</th>
-        </tr>
-        <tr>
-            <td>Element</td>
-            <td>A pure substance made of only one type of atom</td>
-            <td>Oxygen (O), Gold (Au), Carbon (C)</td>
-            <td>
-                - Cannot be broken down by chemical means<br>
-                - Listed on the periodic table<br>
-                - Has a unique atomic number
-            </td>
-        </tr>
-        <tr>
-            <td>Atom</td>
-            <td>The smallest unit of an element that maintains its chemical properties</td>
-            <td>An oxygen atom, a gold atom</td>
-            <td>
-                - Contains protons, neutrons, and electrons<br>
-                - Too small to see with a regular microscope<br>
-                - The basic building block of all matter
-            </td>
-        </tr>
-        <tr>
-            <td>Molecule</td>
-            <td>Two or more atoms bonded together</td>
-            <td>O₂, H₂O, CO₂</td>
-            <td>
-                - Can contain atoms of the same or different elements<br>
-                - Has specific three-dimensional arrangement<br>
-                - Smallest unit of a compound
-            </td>
-        </tr>
-        <tr>
-            <td>Compound</td>
-            <td>A substance formed when two or more different elements chemically combine</td>
-            <td>Water (H₂O), Table salt (NaCl), Glucose (C₆H₁₂O₆)</td>
-            <td>
-                - Has properties different from its constituent elements<br>
-                - Has a fixed ratio of atoms<br>
-                - Can be broken down by chemical means
-            </td>
-        </tr>
-        <tr>
-            <td>Mixture</td>
-            <td>A combination of two or more substances that are not chemically combined</td>
-            <td>Salt water, air, soil</td>
-            <td>
-                - Components retain their individual properties<br>
-                - Can be separated by physical means<br>
-                - Can have variable composition
-            </td>
-        </tr>
-    </table>
-    
-    <p><strong>Important relationships:</strong></p>
-    <ul>
-        <li>All compounds are molecules, but not all molecules are compounds. For example, O₂ is a molecule but not a compound because it contains only one element.</li>
-        <li>Compounds and elements are both pure substances, while mixtures are not.</li>
-        <li>Mixtures can contain elements, compounds, or both.</li>
-    </ul>
-    
-    <div class="check-understanding">
-        <h3>Quick Check:</h3>
-        <p>What's the difference between an element and a compound?</p>
-        <p>Can a molecule contain only one type of element? Explain with an example.</p>
-        <p>How is a mixture different from a compound?</p>
-    </div>
-    
     <h2>6. From Atoms to Molecules</h2>
     
     <p>When two or more atoms bond together, they form a <strong>molecule</strong>. A molecule is the smallest particle of a compound that still maintains the properties of that compound.</p>
@@ -331,7 +314,7 @@
     
     <div class="image-container">
         <img src="water_oxygen_carbondioxide_molecules.jpg" alt="Models of water, oxygen, and carbon dioxide molecules">
-        <div class="image-caption">Models of water (H₂O), oxygen (O₂), and carbon dioxide (CO₂) molecules showing their atomic structure</div>
+        <p class="caption">Models of common molecules: water (H₂O), oxygen (O₂), and carbon dioxide (CO₂)</p>
     </div>
     
     <div class="fun-fact">
@@ -397,7 +380,7 @@
     
     <div class="image-container">
         <img src="chemist_in_lab.jpg" alt="Chemist working in a laboratory">
-        <div class="image-caption">A chemist working in a laboratory studying molecular structures</div>
+        <p class="caption">Chemists use their knowledge of atomic structure to create new molecules for medicine and other applications</p>
     </div>
     
     <p>For example, biochemists have used their understanding of molecules to produce insulin for people with diabetes. This process involves creating complex molecules that function like the insulin naturally produced by the human body.</p>
@@ -471,11 +454,11 @@
         </tr>
         <tr>
             <td>Compound</td>
-            <td>A substance formed when two or more different elements combine chemically</td>
+            <td>A pure substance composed of two or more different elements chemically combined</td>
         </tr>
         <tr>
             <td>Mixture</td>
-            <td>A combination of two or more substances that are not chemically combined</td>
+            <td>Two or more substances physically combined but not chemically bonded</td>
         </tr>
         <tr>
             <td>Atomic Number</td>
@@ -499,8 +482,8 @@
             <li>The periodic table organizes all known elements and provides information about their atomic structure</li>
             <li>The atomic number tells us how many protons and electrons are in an atom</li>
             <li>Molecules form when two or more atoms bond together</li>
-            <li>Compounds are formed when atoms of different elements bond together</li>
-            <li>Mixtures are physical combinations of substances that retain their individual properties</li>
+            <li>Compounds are pure substances made of two or more different elements chemically bonded together</li>
+            <li>Mixtures are combinations of substances that can be separated by physical methods</li>
             <li>Molecules can range from simple (like H<sub>2</sub>O) to extremely complex (like proteins)</li>
             <li>The arrangement of atoms in a molecule determines its properties</li>
         </ul>
@@ -514,7 +497,6 @@
             <li>How might changing the number of hydrogen atoms in a water molecule affect its properties?</li>
             <li>Why are metals typically good conductors of electricity based on their atomic structure?</li>
             <li>How does the molecular structure of sugar (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>) contribute to its properties as a solid that dissolves in water?</li>
-            <li>Classify the following as elements, compounds, or mixtures: pure gold, air, water, salt water, carbon dioxide.</li>
         </ol>
     </div>
 </body>
