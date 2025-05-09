@@ -78,34 +78,27 @@
             max-width: 100%;
             height: auto;
             border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
             width: 400px;
         }
         .caption {
             font-style: italic;
-            color: #666;
             margin-top: 8px;
+            color: #666;
         }
-        .image-side-by-side {
+        .two-column {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
             margin: 20px 0;
+            flex-wrap: wrap;
         }
-        .image-side-by-side .image-item {
-            width: 48%;
-            margin-bottom: 15px;
-            text-align: center;
+        .column {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
         }
-        .image-side-by-side img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
-        }
-        @media (max-width: 600px) {
-            .image-side-by-side .image-item {
-                width: 100%;
+        @media (max-width: 768px) {
+            .column {
+                flex: 0 0 100%;
             }
         }
     </style>
@@ -123,17 +116,22 @@
 
         <div class="image-container">
             <img src="push_pull.jpg" alt="Examples of push and pull forces">
-            <p class="caption">Push and pull are the two basic types of forces we experience every day</p>
+            <p class="caption">Forces are either pushes or pulls that can move objects or change their motion</p>
         </div>
 
-        <div class="image-container">
-            <img src="push_pull_are_opposite_forces.jpg" alt="Push and pull as opposite forces">
-            <p class="caption">Push and pull forces often work in opposite directions</p>
-        </div>
-
-        <div class="image-container">
-            <img src="kids_pushing_pulling_toy_car.jpg" alt="Kids pushing and pulling a toy car">
-            <p class="caption">Children experiencing push and pull forces while playing with a toy car</p>
+        <div class="two-column">
+            <div class="column">
+                <div class="image-container">
+                    <img src="pushing_force.jpg" alt="Person applying a pushing force">
+                    <p class="caption">Pushing is a force applied away from your body</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="kids_pushing_pulling_toy_car.jpg" alt="Kids pushing and pulling a toy car">
+                    <p class="caption">Children applying push and pull forces to move a toy car</p>
+                </div>
+            </div>
         </div>
 
         <div class="highlight">
@@ -145,12 +143,17 @@
         </div>
 
         <div class="image-container">
-            <img src="player_kicking_ball.jpg" alt="Player kicking a soccer ball">
-            <p class="caption">When kicking a ball, the player applies a force with both strength and direction</p>
+            <img src="push_pull_are_opposite_forces.jpg" alt="Diagram showing push and pull as opposite forces">
+            <p class="caption">Push and pull are forces acting in opposite directions</p>
         </div>
 
         <div class="example">
             <p>When you kick a soccer ball, you apply a certain amount of strength to push the ball in a specific direction. If you kick softly, the ball won't go far. If you kick hard but in the wrong direction, you'll miss your target!</p>
+        </div>
+
+        <div class="image-container">
+            <img src="player_kicking_ball.jpg" alt="Soccer player kicking a ball">
+            <p class="caption">A soccer player applies force with strength and direction when kicking the ball</p>
         </div>
 
         <h2>Multiple Forces Acting Together</h2>
@@ -164,11 +167,6 @@
             <li>Gravity pulls you and the bike toward Earth's center</li>
         </ul>
 
-        <div class="image-container">
-            <img src="pushing_force.jpg" alt="Person applying pushing force">
-            <p class="caption">Pushing requires force - the strength and direction both matter</p>
-        </div>
-
         <h2>Balanced Forces</h2>
         <p>When two forces of equal strength act on an object in opposite directions, they are called <span class="vocab-term">balanced forces</span>. When forces are balanced, they cancel each other out, and the object will:</p>
         <ul>
@@ -177,18 +175,8 @@
         </ul>
 
         <div class="image-container">
-            <img src="balanced_forces_diagram.jpg" alt="Diagram showing balanced forces">
-            <p class="caption">Balanced forces are equal in strength but opposite in direction</p>
-        </div>
-
-        <div class="image-container">
-            <img src="balanced_forces_tug.jpg" alt="People in tug of war with balanced forces">
-            <p class="caption">In tug-of-war, when forces are balanced, the rope doesn't move</p>
-        </div>
-
-        <div class="image-container">
-            <img src="balanced_forces_two_people_pushing_box.jpg" alt="Two people pushing a box from opposite sides">
-            <p class="caption">When two people push with equal force from opposite sides, the box doesn't move</p>
+            <img src="balanced_forces_diagram.jpg" alt="Diagram of balanced forces">
+            <p class="caption">Diagram showing balanced forces - equal in strength, opposite in direction</p>
         </div>
 
         <div class="example">
@@ -196,12 +184,22 @@
         </div>
 
         <div class="image-container">
-            <img src="book_on_table.jpg" alt="Book resting on a table">
-            <p class="caption">A book resting on a table demonstrates balanced forces - gravity pulls down while the table pushes up</p>
+            <img src="balanced_forces_tug.jpg" alt="Balanced forces in tug of war">
+            <p class="caption">When both teams pull with equal force, the rope doesn't move because the forces are balanced</p>
+        </div>
+
+        <div class="image-container">
+            <img src="balanced_forces_two_people_pushing_box.jpg" alt="Two people pushing a box from opposite sides">
+            <p class="caption">When two people push a box with equal force from opposite sides, the box doesn't move</p>
         </div>
 
         <div class="activity">
             <p><strong>Try This:</strong> Place a book on a table. The book doesn't move because of balanced forces. Gravity pulls the book down, while the table pushes up with an equal force. These balanced forces keep the book at rest.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="book_on_table.jpg" alt="Book resting on a table demonstrating balanced forces">
+            <p class="caption">A book at rest on a table - gravity pulls down, the table pushes up with equal force</p>
         </div>
 
         <h2>Unbalanced Forces</h2>
@@ -213,21 +211,21 @@
 
         <div class="image-container">
             <img src="balanced_unbalanced_forces_diagram.jpg" alt="Diagram comparing balanced and unbalanced forces">
-            <p class="caption">Comparison of balanced forces (no movement) and unbalanced forces (causes movement)</p>
-        </div>
-
-        <div class="image-container">
-            <img src="kids_on_see_saw_unbalanced_forces.jpg" alt="Kids on an unbalanced see-saw">
-            <p class="caption">Unbalanced forces on a see-saw cause movement in the direction of the greater force</p>
-        </div>
-
-        <div class="image-container">
-            <img src="tug_of_war.jpg" alt="People in tug of war with unbalanced forces">
-            <p class="caption">When one side pulls with greater force in tug-of-war, the rope moves in that direction</p>
+            <p class="caption">Comparison of balanced forces (no motion) and unbalanced forces (causes motion)</p>
         </div>
 
         <div class="example">
             <p><strong>Example of Unbalanced Forces:</strong> In a tug-of-war game, if one team pulls with more strength than the other team, the rope will move in the direction of the stronger force. This is an unbalanced force causing motion!</p>
+        </div>
+
+        <div class="image-container">
+            <img src="tug_of_war.jpg" alt="Tug of war showing unbalanced forces">
+            <p class="caption">In a real tug-of-war, when one team pulls harder, the rope moves in that direction</p>
+        </div>
+
+        <div class="image-container">
+            <img src="kids_on_see_saw_unbalanced_forces.jpg" alt="Kids on a seesaw with unbalanced forces">
+            <p class="caption">Children on a seesaw - when the weights are unequal, the seesaw tilts toward the heavier side</p>
         </div>
 
         <div class="activity">
@@ -235,8 +233,8 @@
         </div>
 
         <div class="image-container">
-            <img src="friction.jpg" alt="Friction slowing down a moving object">
-            <p class="caption">Friction is a force that acts against motion and can eventually stop a moving object</p>
+            <img src="friction.jpg" alt="Illustration of friction as a force">
+            <p class="caption">Friction is a force that opposes motion, eventually stopping moving objects</p>
         </div>
 
         <h2>Gravity: A Special Force</h2>
@@ -253,18 +251,13 @@
             <p class="caption">An apple falls from a tree because gravity pulls it toward Earth's center</p>
         </div>
 
-        <div class="image-container">
-            <img src="person_standing_on_ground.jpg" alt="Person standing on the ground">
-            <p class="caption">We stay on the ground because gravity pulls us toward Earth's center</p>
-        </div>
-
         <div class="highlight">
             <p><span class="vocab-term">Important:</span> No matter where you are on Earth (north pole, south pole, or equator), "down" always means "toward the center of Earth." This is why people can stand on opposite sides of Earth without falling off!</p>
         </div>
 
         <div class="image-container">
-            <img src="earth_gravity_perspective_global_orientation.jpg" alt="Global perspective showing gravity pointing to Earth's center">
-            <p class="caption">Gravity points toward Earth's center from anywhere on the planet</p>
+            <img src="earth_gravity_perspective_global_orientation.jpg" alt="Earth gravity diagram showing perspective from different positions">
+            <p class="caption">No matter where you are on Earth, gravity pulls toward Earth's center</p>
         </div>
 
         <div class="example">
@@ -273,11 +266,16 @@
 
         <div class="image-container">
             <img src="dog_jumping_to_catch_ball.jpg" alt="Dog jumping to catch a ball">
-            <p class="caption">A dog jumping to catch a ball will come back down due to gravity's pull</p>
+            <p class="caption">A dog jumps to catch a ball, but gravity will eventually pull both the dog and ball back to Earth</p>
         </div>
 
         <div class="think-about">
             <p><strong>Think About This:</strong> If you and a friend on the opposite side of Earth both drop a ball at the same time, both balls fall "down" - but they're actually moving in opposite directions in space! Both are moving toward Earth's center.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="person_standing_on_ground.jpg" alt="Person standing on ground with gravity illustrated">
+            <p class="caption">People can stand on Earth's surface because gravity pulls them toward Earth's center</p>
         </div>
 
         <h2>Gravity and Balanced Forces</h2>
