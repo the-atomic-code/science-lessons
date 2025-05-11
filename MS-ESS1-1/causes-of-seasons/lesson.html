@@ -104,11 +104,15 @@
             margin: 20px 0;
         }
         .image-container img {
-            max-width: 100%;
             height: auto;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .standard-image {
             width: 550px;
+        }
+        .wide-image {
+            width: 800px;
         }
         .caption {
             font-style: italic;
@@ -123,7 +127,7 @@
             margin: 20px 0;
         }
         .image-with-text img {
-            max-width: 45%;
+            width: 550px;
             height: auto;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -133,12 +137,15 @@
             flex: 1;
             min-width: 300px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 850px) {
+            .standard-image, .wide-image {
+                width: 100%;
+            }
             .image-with-text {
                 flex-direction: column;
             }
             .image-with-text img {
-                max-width: 100%;
+                width: 100%;
                 margin-right: 0;
                 margin-bottom: 15px;
             }
@@ -158,7 +165,7 @@
         <p>Contrary to popular belief, Earth's distance from the Sun is <strong>not</strong> the main cause of seasons. The primary cause is Earth's <span class="highlight">tilt of axis</span>.</p>
         
         <div class="image-container">
-            <img src="Earth_Axial_Tilt_23.5_Degrees.jpg" alt="Earth's 23.5° tilt on its axis">
+            <img src="Earth_Axial_Tilt_23.5_Degrees.jpg" alt="Earth's 23.5° tilt on its axis" class="standard-image">
             <p class="caption">Earth's axis is tilted at precisely 23.5° relative to its orbital plane around the Sun</p>
         </div>
         
@@ -178,7 +185,7 @@
         <p>As Earth orbits the Sun, its tilted axis causes different parts of the planet to receive varying amounts of solar radiation throughout the year:</p>
         
         <div class="image-container">
-            <img src="Earth_Day_Night_Cycle_Solar_Illumination.jpg" alt="Earth's day and night cycle with solar illumination">
+            <img src="Earth_Day_Night_Cycle_Solar_Illumination.jpg" alt="Earth's day and night cycle with solar illumination" class="standard-image">
             <p class="caption">The illumination of Earth creates day and night as our planet rotates, but the tilt causes varying day lengths throughout the year</p>
         </div>
         
@@ -188,7 +195,7 @@
         </ul>
 
         <div class="image-container">
-            <img src="Earth_Axis_Sunlight_Distribution_Major_Latitude_Lines.jpg" alt="Earth's axis and sunlight distribution across major latitude lines">
+            <img src="Earth_Axis_Sunlight_Distribution_Major_Latitude_Lines.jpg" alt="Earth's axis and sunlight distribution across major latitude lines" class="standard-image">
             <p class="caption">Earth's axial tilt affects how sunlight is distributed across different latitudes throughout the year</p>
         </div>
 
@@ -202,7 +209,7 @@
         <p>Light is a form of energy that travels through space. The amount of solar energy reaching Earth's surface depends on the angle at which sunlight strikes the surface.</p>
         
         <div class="image-container">
-            <img src="Sunlight_Angle_Earth_Atmosphere_Effect.jpg" alt="Sunlight angle and its effect on Earth's atmosphere">
+            <img src="Sunlight_Angle_Earth_Atmosphere_Effect.jpg" alt="Sunlight angle and its effect on Earth's atmosphere" class="standard-image">
             <p class="caption">The angle at which sunlight strikes Earth affects its intensity and how much energy is absorbed</p>
         </div>
         
@@ -223,7 +230,7 @@
         <p>Latitude refers to the angular distance north or south of the equator, measured in degrees. The equator is at 0° latitude and divides Earth into the Northern and Southern Hemispheres.</p>
         
         <div class="image-container">
-            <img src="Earth_Latitude_Grid_System_Major_Circles.jpg" alt="Earth's latitude grid system showing major circles">
+            <img src="Earth_Latitude_Grid_System_Major_Circles.jpg" alt="Earth's latitude grid system showing major circles" class="standard-image">
             <p class="caption">Earth's major latitude lines include the Equator (0°), Tropic of Cancer (23.5°N), Tropic of Capricorn (23.5°S), Arctic Circle (66.5°N), and Antarctic Circle (66.5°S)</p>
         </div>
         
@@ -248,7 +255,7 @@
         <p>The number of daylight hours a location receives varies throughout the year, except at the equator.</p>
         
         <div class="image-container">
-            <img src="Earth_Seasonal_Daylight_Distribution.jpg" alt="Earth's seasonal daylight distribution" width="800">
+            <img src="Earth_Seasonal_Daylight_Distribution.jpg" alt="Earth's seasonal daylight distribution" class="wide-image">
             <p class="caption">The distribution of daylight hours varies significantly by latitude and season</p>
         </div>
         
@@ -374,7 +381,7 @@
         </div>
 
         <div class="image-container">
-            <img src="astronomer_observing.jpg" alt="Astronomer making observations">
+            <img src="astronomer_observing.jpg" alt="Astronomer making observations" class="standard-image">
             <p class="caption">Astronomers use observatories and specialized instruments to study celestial phenomena, including planetary rotations and orbits</p>
         </div>
         
