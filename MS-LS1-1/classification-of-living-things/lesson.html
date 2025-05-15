@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification of Living Things</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+        .info-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .fun-fact {
+            background-color: #fef5e7;
+            border-left: 5px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .activity {
+            background-color: #eafaf1;
+            border-left: 5px solid #2ecc71;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .warning {
+            background-color: #fdedec;
+            border-left: 5px solid #e74c3c;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .code {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #3498db;
+        }
+        .check-understanding {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .caption {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+        .side-by-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .side-by-side .image-container {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Classification of Living Things</h1>
+        
+        <div class="info-box">
+            <p>Welcome to the fascinating world of biological classification! In this lesson, we'll explore how scientists organize the incredible diversity of life on Earth. By the end, you'll understand why classification is important, how organisms are classified, and the modern tools scientists use to determine relationships between different living things.</p>
+        </div>
+
+        <h2>What is Classification?</h2>
+        <p>Classification is the process of organizing living things into groups based on their shared characteristics or traits. When you see an unfamiliar organism, you naturally try to make sense of it by comparing it to organisms you already know. Scientists do the same thing, but in a more systematic way.</p>
+        
+        <div class="image-container">
+            <img src="Tiger_Salamander_Amphibian.jpg" alt="Tiger Salamander - An example of an amphibian">
+            <p class="caption">Tiger Salamander - Scientists classify this as an amphibian based on its characteristics, including moist skin, life cycle with aquatic larval stage, and lack of scales or claws.</p>
+        </div>
+        
+        <div class="fun-fact">
+            <p><strong>Fun Fact:</strong> There are an estimated 8.7 million species on Earth, but scientists have only identified and named about 1.2 million of them so far!</p>
+        </div>
+        
+        <p>For example, if you saw a bat for the first time, you might notice it has wings and flies, similar to birds. However, upon closer inspection, you'd also notice it doesn't have feathers, doesn't have a beak, and doesn't lay eggs. Instead, it has fur, gives birth to live young, and produces milk - traits shared with mammals, not birds. This is how classification works - by examining shared traits to determine relationships.</p>
+
+        <h2>Taxonomy: The Science of Classification</h2>
+        <p><span class="highlight">Taxonomy</span> is the scientific field dedicated to naming, describing, and classifying organisms. This systematic approach helps scientists organize and make sense of the incredible diversity of life. More importantly, classification helps us understand how different living things are related to each other.</p>
+        
+        <div class="info-box">
+            <p>The term "taxonomy" comes from the Greek words "taxis" (arrangement) and "nomia" (method). It was developed by Swedish botanist Carl Linnaeus in the 18th century.</p>
+        </div>
+
+        <h2>Levels of Classification</h2>
+        <p>Taxonomists organize living things into hierarchical groups, from broadest to most specific:</p>
+        
+        <div class="image-container">
+            <img src="Taxonomic-Hierarchy-Pyramid.jpg" alt="Taxonomic Classification Hierarchy Pyramid">
+            <p class="caption">The taxonomic hierarchy from Domain (broadest) to Species (most specific)</p>
+        </div>
+        
+        <table>
+            <tr>
+                <th>Level</th>
+                <th>Description</th>
+                <th>Example (Human)</th>
+            </tr>
+            <tr>
+                <td>Domain</td>
+                <td>The broadest category</td>
+                <td>Eukarya</td>
+            </tr>
+            <tr>
+                <td>Kingdom</td>
+                <td>Major divisions within domains</td>
+                <td>Animalia</td>
+            </tr>
+            <tr>
+                <td>Phylum</td>
+                <td>Major body plans within kingdoms</td>
+                <td>Chordata</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Major groups within phyla</td>
+                <td>Mammalia</td>
+            </tr>
+            <tr>
+                <td>Order</td>
+                <td>Related families</td>
+                <td>Primates</td>
+            </tr>
+            <tr>
+                <td>Family</td>
+                <td>Related genera</td>
+                <td>Hominidae</td>
+            </tr>
+            <tr>
+                <td>Genus</td>
+                <td>Closely related species</td>
+                <td>Homo</td>
+            </tr>
+            <tr>
+                <td>Species</td>
+                <td>Most specific category; organisms that can interbreed</td>
+                <td>sapiens</td>
+            </tr>
+        </table>
+        
+        <div class="image-container">
+            <img src="Human_Taxonomic_Classification_Chart.jpg" alt="Human Taxonomic Classification Chart">
+            <p class="caption">The complete taxonomic classification of humans (Homo sapiens)</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="Taxonomic_Classification_Hierarchy_Human_Example.jpg" alt="Human Example of Taxonomic Classification Hierarchy">
+            <p class="caption">Visual representation of taxonomic classification levels from Domain to Species using humans as an example</p>
+        </div>
+        
+        <div class="activity">
+            <p><strong>Memory Tip:</strong> Remember the order of taxonomic ranks from broadest to most specific with this mnemonic: "Dear King Philip Came Over For Good Soup" (Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species).</p>
+        </div>
+
+        <h2>The Three Domains of Life</h2>
+        <p>All living things can be categorized into three domains:</p>
+        <ol>
+            <li><strong>Bacteria:</strong> Single-celled organisms without a nucleus (prokaryotes)</li>
+            <li><strong>Archaea:</strong> Single-celled organisms without a nucleus (prokaryotes) but with different biochemistry than bacteria</li>
+            <li><strong>Eukarya:</strong> Organisms with cells containing nuclei (eukaryotes), including plants, animals, fungi, and protists</li>
+        </ol>
+        
+        <div class="info-box">
+            <p>The presence or absence of a nucleus is a fundamental trait that distinguishes between domains. Bacteria and Archaea are prokaryotes (no nucleus), while all organisms in Domain Eukarya are eukaryotes (have a nucleus).</p>
+        </div>
+
+        <h2>Scientific Names: The Universal Language of Taxonomy</h2>
+        <p>Every species is given a unique two-word name, known as a <span class="highlight">binomial nomenclature</span>. This system was established by Carl Linnaeus and is typically written in Latin. The name consists of:</p>
+        <ul>
+            <li>The <strong>genus</strong> name (capitalized)</li>
+            <li>The <strong>species</strong> name (lowercase)</li>
+            <li>Both names are italicized or underlined when written</li>
+        </ul>
+        
+        <div class="image-container">
+            <img src="felis_catus_cat.jpg" alt="Domestic Cat - Felis catus">
+            <p class="caption">Domestic cat (Felis catus) - An example of binomial nomenclature in taxonomy</p>
+        </div>
+        
+        <p>For example, humans are <span class="code">Homo sapiens</span>, domestic cats are <span class="code">Felis catus</span>, and dogs are <span class="code">Canis familiaris</span>.</p>
+        
+        <div class="info-box">
+            <p>Why use Latin for scientific names? When taxonomy was established in the 18th century, Latin was considered the universal language of science and education. Using Latin created a standardized naming system that transcended language barriers.</p>
+        </div>
+        
+        <p>Scientific names are essential because common names vary widely across different languages and cultures. For example, what English speakers call a "cat" is "gato" in Spanish, "māo" in Chinese, and "goyang-i" in Korean. However, scientists worldwide all recognize <span class="code">Felis catus</span> as the domestic cat, avoiding confusion in scientific communication.</p>
+
+        <h2>Tools for Classification</h2>
+        
+        <h3>Dichotomous Keys</h3>
+        <p>A <span class="highlight">dichotomous key</span> is a tool that helps identify unknown organisms through a series of paired statements or questions. Each pair offers two mutually exclusive choices about a characteristic of the organism.</p>
+        
+        <div class="image-container">
+            <img src="Dichotomous-tree.jpg" alt="Dichotomous Key Example">
+            <p class="caption">Example of a dichotomous key in a branching tree format, showing how each choice leads to either another question or an identification</p>
+        </div>
+        
+        <p>The word "dichotomous" means "divided into two parts." As you work through a dichotomous key, each choice leads to another pair of statements until you reach the identity of the organism.</p>
+        
+        <p>Dichotomous keys can be presented in two formats:</p>
+        <ol>
+            <li>As a branching flow chart (as shown in the image above)</li>
+            <li>As a series of numbered, paired statements</li>
+        </ol>
+        
+        <div class="activity">
+            <p><strong>Simple Dichotomous Key Example:</strong></p>
+            <p>1. a. The organism has wings → go to 2<br>
+               1. b. The organism does not have wings → go to 3</p>
+            <p>2. a. Wings have feathers → Bird<br>
+               2. b. Wings have no feathers → Bat</p>
+            <p>3. a. Body has fur or hair → Mammal<br>
+               3. b. Body has scales → Reptile</p>
+        </div>
+
+        <h3>DNA Analysis in Modern Classification</h3>
+        <p>Traditional classification relies on observable physical traits, but sometimes these can be misleading. Two organisms might look very similar but be genetically quite different, or vice versa.</p>
+        
+        <div class="side-by-side">
+            <div class="image-container">
+                <img src="pill-bug_pill-millipede.jpg" alt="Pill Bug and Pill Millipede Comparison">
+                <p class="caption">Although pill bugs (left) and pill millipedes (right) look nearly identical and both roll into a ball for protection, DNA analysis reveals they belong to entirely different taxonomic groups. Pill bugs are crustaceans related to shrimp, while pill millipedes are more closely related to centipedes and insects.</p>
+            </div>
+        </div>
+        
+        <p>DNA (deoxyribonucleic acid) is the molecule that contains the genetic instructions for the development and functioning of all living organisms. Since all living things have DNA, scientists can compare DNA sequences between different organisms to determine how closely related they are.</p>
+        
+        <div class="fun-fact">
+            <p><strong>Amazing DNA Fact:</strong> Human DNA is 99.9% identical between all people. Humans share approximately 96% of their DNA with chimpanzees, 80% with cows, and even 60% with fruit flies!</p>
+        </div>
+        
+        <p>The more similar the DNA sequences between two organisms, the more closely related they are likely to be. This method has revolutionized taxonomy and sometimes leads to reclassification of organisms that were previously grouped based only on physical appearance.</p>
+        
+        <div class="info-box">
+            <p>The example of pill bugs and pill millipedes shown above demonstrates how DNA analysis has changed classification. Despite looking almost identical and sharing the ability to roll into a ball, these organisms are very different genetically. Pill bugs are crustaceans related to shrimp and crabs, while pill millipedes are arthropods related to centipedes!</p>
+        </div>
+
+        <h2>Why Classification Matters</h2>
+        <p>You might wonder why scientists put so much effort into classifying living things. Here are some important reasons:</p>
+        
+        <ol>
+            <li><strong>Organization:</strong> Classification helps organize the vast diversity of life in a logical way.</li>
+            <li><strong>Identification:</strong> It provides a systematic method to identify new species.</li>
+            <li><strong>Understanding relationships:</strong> Classification reveals evolutionary relationships between organisms.</li>
+            <li><strong>Communication:</strong> It creates a universal language for scientists worldwide to discuss specific organisms.</li>
+            <li><strong>Prediction:</strong> Knowing how organisms are related helps scientists predict characteristics they might share.</li>
+        </ol>
+
+        <h2>Classification: An Evolving Science</h2>
+        <p>Although taxonomy has been used for more than 200 years, it's constantly evolving. As technology advances, particularly in DNA analysis, our understanding of relationships between organisms changes, sometimes dramatically.</p>
+        
+        <p>When new organisms are discovered that don't fit neatly into existing groups, taxonomists may create new categories or reorganize existing ones. This happened when scientists realized that some single-celled organisms were fundamentally different from bacteria and created Domain Archaea.</p>
+        
+        <div class="warning">
+            <p><strong>Important Note:</strong> Classification is a human-made system designed to help us understand the natural world. As we learn more, the system changes to better reflect our understanding of evolutionary relationships.</p>
+        </div>
+
+        <h2>Classification Example: The Tiger Salamander</h2>
+        <p>Let's apply what we've learned to classify the tiger salamander (shown at the beginning of this lesson):</p>
+
+        <table>
+            <tr>
+                <th>Taxonomic Level</th>
+                <th>Classification</th>
+                <th>Explanation</th>
+            </tr>
+            <tr>
+                <td>Domain</td>
+                <td>Eukarya</td>
+                <td>Cells contain a nucleus</td>
+            </tr>
+            <tr>
+                <td>Kingdom</td>
+                <td>Animalia</td>
+                <td>Multicellular organism that consumes other organisms for food</td>
+            </tr>
+            <tr>
+                <td>Phylum</td>
+                <td>Chordata</td>
+                <td>Has a notochord (primitive backbone) at some point in development</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Amphibia</td>
+                <td>Lives both in water and on land; moist skin; typically undergoes metamorphosis</td>
+            </tr>
+            <tr>
+                <td>Order</td>
+                <td>Caudata</td>
+                <td>Has a tail throughout life (unlike frogs); salamander group</td>
+            </tr>
+            <tr>
+                <td>Family</td>
+                <td>Ambystomatidae</td>
+                <td>Mole salamanders; spend most of their life underground</td>
+            </tr>
+            <tr>
+                <td>Genus</td>
+                <td>Ambystoma</td>
+                <td>A group of North American salamanders</td>
+            </tr>
+            <tr>
+                <td>Species</td>
+                <td>tigrinum</td>
+                <td>Tiger salamander; distinctive tiger-like stripes or spots</td>
+            </tr>
+        </table>
+        
+        <p>The complete scientific name of the tiger salamander is <span class="code">Ambystoma tigrinum</span>.</p>
+
+        <h2>Key Vocabulary</h2>
+        <table>
+            <tr>
+                <th>Term</th>
+                <th>Definition</th>
+            </tr>
+            <tr>
+                <td>Taxonomy</td>
+                <td>The science of naming, describing, and classifying organisms</td>
+            </tr>
+            <tr>
+                <td>Classify</td>
+                <td>To arrange in categories based on shared characteristics</td>
+            </tr>
+            <tr>
+                <td>Trait</td>
+                <td>A distinguishing characteristic or feature</td>
+            </tr>
+            <tr>
+                <td>Dichotomous key</td>
+                <td>A tool used to identify organisms through a series of paired statements about characteristics</td>
+            </tr>
+            <tr>
+                <td>Scientific name</td>
+                <td>The two-part taxonomic name consisting of genus and species</td>
+            </tr>
+            <tr>
+                <td>Species</td>
+                <td>A group of similar organisms that can reproduce to create fertile offspring</td>
+            </tr>
+            <tr>
+                <td>Binomial nomenclature</td>
+                <td>The two-name system used for scientific naming of species</td>
+            </tr>
+            <tr>
+                <td>DNA</td>
+                <td>Deoxyribonucleic acid; the molecule that carries genetic instructions in all living things</td>
+            </tr>
+            <tr>
+                <td>Prokaryote</td>
+                <td>An organism whose cells lack a nucleus (bacteria and archaea)</td>
+            </tr>
+            <tr>
+                <td>Eukaryote</td>
+                <td>An organism whose cells contain a nucleus (plants, animals, fungi, protists)</td>
+            </tr>
+        </table>
+
+        <h2>Check Your Understanding</h2>
+        <div class="check-understanding">
+            <ol>
+                <li>What is taxonomy and why is it important?</li>
+                <li>List the eight taxonomic levels from broadest to most specific.</li>
+                <li>How should scientific names be written? Give an example.</li>
+                <li>Why are scientific names important for global scientific communication?</li>
+                <li>What is a dichotomous key and how is it used?</li>
+                <li>How is DNA used in modern classification?</li>
+                <li>What is the primary trait that distinguishes bacteria as their own domain?</li>
+                <li>Why does taxonomy change over time?</li>
+                <li>If two organisms look identical but have very different DNA, which method of classification would be more accurate?</li>
+                <li>How does classification help us understand relationships between organisms?</li>
+                <li>Why might the pill bug and pill millipede be classified differently despite looking similar?</li>
+                <li>In the example of the tiger salamander, what characteristics place it in the class Amphibia rather than Reptilia?</li>
+            </ol>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Classification is a fundamental aspect of biology that helps us organize and understand the diversity of life on Earth. Through taxonomy, scientists have developed a hierarchical system of classification with eight levels, from domain to species. Each species is given a unique scientific name consisting of its genus and species names, written in Latin to provide a universal naming system across languages and cultures.</p>
+        
+        <p>While traditional classification relied on observable physical traits, modern taxonomy also incorporates DNA analysis, which sometimes reveals surprising relationships between organisms that look similar but are genetically distinct, as we saw with the pill bug and pill millipede example. Tools like dichotomous keys help identify unknown organisms through a series of questions about their characteristics.</p>
+        
+        <p>Classification is not a static science—it continues to evolve as we discover new species and develop better methods for understanding relationships between organisms. By organizing life in this way, we gain insights into the evolutionary history and relationships among all living things on our planet.</p>
+    </div>
+</body>
+</html>
