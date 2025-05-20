@@ -80,19 +80,19 @@
             background-color: #f9f9f9;
         }
         .image-container {
-            margin: 20px 0;
             text-align: center;
+            margin: 20px 0;
         }
         .image-container img {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .image-caption {
+        .caption {
             font-style: italic;
+            color: #666;
             margin-top: 8px;
-            color: #555;
         }
     </style>
 </head>
@@ -109,11 +109,22 @@
         
         <h3>Key Characteristics of Waves</h3>
         <p>All waves, including electromagnetic waves, can be described by three main characteristics:</p>
+        
+        <div class="image-container">
+            <img src="wavelength_amplitude.jpg" alt="Diagram showing wavelength and amplitude of a wave">
+            <p class="caption">Diagram showing wavelength and amplitude of a wave. The amplitude is the height from the resting position, while wavelength is the distance between consecutive peaks.</p>
+        </div>
+        
         <ul>
             <li><span class="key-term">Amplitude</span>: The height of a wave from its resting point. Larger amplitude means more energy is being transferred.</li>
             <li><span class="key-term">Wavelength</span>: The distance from one wave peak to the next peak (or from any point on the wave to the corresponding point on the next wave).</li>
             <li><span class="key-term">Frequency</span>: The number of waves that pass a given point in one second, measured in Hertz (Hz).</li>
         </ul>
+        
+        <div class="image-container">
+            <img src="higher_lower_frequency_waves.jpg" alt="Comparison of high and low frequency waves">
+            <p class="caption">Comparison of high frequency (top) and low frequency (bottom) waves. Note how high frequency waves have more cycles per unit of distance.</p>
+        </div>
         
         <div class="activity">
             <h3>Think About It:</h3>
@@ -138,8 +149,8 @@
         <p>Electromagnetic radiation is a type of wave that transfers energy through oscillating electric and magnetic fields. What makes the electromagnetic spectrum so fascinating is its incredible range - from radio waves with wavelengths as long as buildings to gamma rays with wavelengths smaller than an atom's nucleus.</p>
         
         <div class="image-container">
-            <img src="electromagnetic_spectrum.jpg" alt="The electromagnetic spectrum showing different types of waves from radio waves to gamma rays">
-            <p class="image-caption">The electromagnetic spectrum ranges from long-wavelength, low-energy radio waves on the left to short-wavelength, high-energy gamma rays on the right.</p>
+            <img src="electromagnetic_spectrum.jpg" alt="The electromagnetic spectrum showing different types of waves">
+            <p class="caption">The electromagnetic spectrum, showing the progression from long wavelength, low-energy radio waves to short wavelength, high-energy gamma rays.</p>
         </div>
         
         <div class="fun-fact">
@@ -213,22 +224,6 @@
             <p>Which has more energy: an X-ray or a microwave? Why?</p>
             <p>Answer: An X-ray has more energy because it has a higher frequency and shorter wavelength than a microwave.</p>
         </div>
-
-        <h3>How Light Interacts with Matter</h3>
-        <p>When electromagnetic waves encounter matter, three main interactions can occur:</p>
-        
-        <div class="image-container">
-            <img src="light-reflected-transmitted-absorbed.jpg" alt="Diagram showing how light can be reflected, transmitted, or absorbed by matter">
-            <p class="image-caption">Electromagnetic waves can be reflected, transmitted, or absorbed when they interact with matter.</p>
-        </div>
-        
-        <ul>
-            <li><strong>Reflection</strong>: The wave bounces off the surface of the material</li>
-            <li><strong>Transmission</strong>: The wave passes through the material</li>
-            <li><strong>Absorption</strong>: The wave's energy is absorbed by the material, often converting to heat</li>
-        </ul>
-        
-        <p>Different materials interact differently with various parts of the electromagnetic spectrum. For example, glass transmits visible light but blocks most ultraviolet light. This is why you can't get sunburned through a window.</p>
         
         <h2>Detailed Look at Each Type of Electromagnetic Wave</h2>
         
@@ -236,8 +231,8 @@
         <p>Radio waves have wavelengths that range from a few millimeters to hundreds of kilometers, making them the longest waves in the electromagnetic spectrum. Despite their size, these waves play a crucial role in our daily communications.</p>
         
         <div class="image-container">
-            <img src="CellularTower_RadioFrequencyTransmission.jpg" alt="Cellular tower broadcasting radio frequency waves">
-            <p class="image-caption">Cellular towers transmit and receive radio waves for mobile communications.</p>
+            <img src="CellularTower_RadioFrequencyTransmission.jpg" alt="Cellular tower transmitting radio waves">
+            <p class="caption">Cellular towers transmit and receive radio waves, allowing for mobile communication across large distances.</p>
         </div>
         
         <p>Key features of radio waves:</p>
@@ -268,8 +263,8 @@
         <p>Infrared waves have wavelengths from about 700 nanometers to 1 millimeter. They're often associated with heat because they're emitted by all objects above absolute zero temperature.</p>
         
         <div class="image-container">
-            <img src="Thermal_Infrared_Face_Temperature_Map.jpg" alt="Thermal infrared image showing heat distribution on a human face">
-            <p class="image-caption">Thermal imaging cameras detect infrared waves, allowing us to visualize temperature differences.</p>
+            <img src="Thermal_Infrared_Face_Temperature_Map.jpg" alt="Thermal infrared image of a face">
+            <p class="caption">A thermal infrared image showing heat patterns on a human face. Different colors represent different temperatures.</p>
         </div>
         
         <p>Key features of infrared waves:</p>
@@ -282,6 +277,11 @@
         
         <h3>Visible Light: The Colors We See</h3>
         <p>Visible light is the only part of the electromagnetic spectrum that human eyes can detect. It ranges from about 400 to 700 nanometers in wavelength.</p>
+        
+        <div class="image-container">
+            <img src="light-reflected-transmitted-absorbed.jpg" alt="Light being reflected, transmitted, and absorbed">
+            <p class="caption">Light can be reflected, transmitted, or absorbed when it interacts with matter. These interactions determine what colors we see.</p>
+        </div>
         
         <p>The colors of visible light, from longest wavelength (lowest energy) to shortest wavelength (highest energy):</p>
         <ol>
@@ -314,8 +314,8 @@
         <p>X-rays have wavelengths from about 0.01 to 10 nanometers, giving them enough energy to pass through soft tissues but not denser materials like bone.</p>
         
         <div class="image-container">
-            <img src="x-ray_of_hands.jpg" alt="X-ray image of human hands showing bone structure">
-            <p class="image-caption">X-rays pass through soft tissue but are absorbed by bones, creating high-contrast medical images.</p>
+            <img src="x-ray_of_hands.jpg" alt="X-ray image of human hands">
+            <p class="caption">X-ray image of human hands showing bone structure. X-rays pass through soft tissue but are absorbed by denser bone material.</p>
         </div>
         
         <p>Applications of X-rays:</p>
@@ -350,8 +350,8 @@
         
         <h3>Medicine and Health</h3>
         <div class="image-container">
-            <img src="radiologist.jpg" alt="Radiologist examining medical imaging results">
-            <p class="image-caption">Radiologists use various forms of electromagnetic radiation to diagnose and treat medical conditions.</p>
+            <img src="radiologist.jpg" alt="Radiologist reviewing medical images">
+            <p class="caption">A radiologist analyzing medical images produced using electromagnetic waves, such as X-rays or MRI scans.</p>
         </div>
         
         <ul>
