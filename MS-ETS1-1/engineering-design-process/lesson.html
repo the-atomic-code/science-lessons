@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Engineering Design Process</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 5px;
+            max-width: 1400px;
+            margin: 0 auto;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #e67e22;
+            border-left: 4px solid #e67e22;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #3498db;
+        }
+        .highlight-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .activity {
+            background-color: #e8f4f8;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .key-terms {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .key-term {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        .reflection {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .example {
+            background-color: #e8f8e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .checkpoint {
+            background-color: #ffe0e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        }
+        .image-caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Engineering Design Process</h1>
+    <div class="highlight-box">
+    <p>Welcome to our lesson on the Engineering Design Process! In this lesson, you'll learn how engineers approach and solve problems in a structured, yet creative way. By the end, you'll understand the phases of the engineering design process and how engineers use criteria and constraints to develop successful solutions to real-world problems.</p>
+</div>
+
+<div class="image-container">
+    <img src="engineering_design_process.jpg" alt="Engineering Design Process Overview">
+    <p class="image-caption">Engineers use the design process to solve a wide variety of problems</p>
+</div>
+
+<h2>What is Engineering?</h2>
+<p>Before diving into the engineering design process, let's define what engineering actually is:</p>
+<div class="key-terms">
+    <p><span class="key-term">Engineering:</span> The use of scientific, mathematic, and design principles to solve problems.</p>
+</div>
+<p>Engineers work in many different fields to solve a wide variety of problems. They might develop solutions to:</p>
+<ul>
+    <li>Reduce pollution</li>
+    <li>Create medical devices for surgeries</li>
+    <li>Design faster and more fuel-efficient vehicles</li>
+    <li>Develop renewable energy systems</li>
+    <li>Create recycling systems for plastic waste</li>
+    <li>Build bridges, buildings, and other structures</li>
+</ul>
+
+<div class="image-container">
+    <img src="drone_internal_components.jpg" alt="Drone Internal Components">
+    <p class="image-caption">Engineering combines multiple disciplines - like this drone that requires mechanical, electrical, and software engineering</p>
+</div>
+
+<h2>The Engineering Design Process: An Overview</h2>
+<p>The engineering design process is a series of steps that engineers follow to guide them in solving problems. While there are many versions of this process (ranging from 6 to 19 steps!), they all share three main phases:</p>
+
+<div class="image-container">
+    <img src="3_phase_engineering_design_process.jpg" alt="Three Phase Engineering Design Process">
+    <p class="image-caption">The three main phases of the engineering design process</p>
+</div>
+
+<ol>
+    <li><strong>Define the problem</strong></li>
+    <li><strong>Develop ideas</strong></li>
+    <li><strong>Optimize the design solution</strong></li>
+</ol>
+
+<p>An important characteristic of the engineering design process is that it's <span class="key-term">iterative</span>. This means that engineers don't simply move through the steps in a straight line. Instead, they often repeat steps, jump back and forth between phases, and cycle through the process multiple times to improve their solutions.</p>
+
+<div class="image-container">
+    <img src="engineering_design_process_flowchart.jpg" alt="Engineering Design Process Flowchart">
+    <p class="image-caption">A flowchart showing how the engineering design process cycles through different steps</p>
+</div>
+
+<div class="checkpoint">
+    <h3>Quick Check!</h3>
+    <p>What does it mean when we say the engineering design process is "iterative"?</p>
+    <ul>
+        <li>It means engineers repeat steps and don't necessarily follow a linear order</li>
+        <li>It means engineers only test their designs at the end</li>
+        <li>It means engineers go through the process only once</li>
+        <li>It means engineers work individually rather than in teams</li>
+    </ul>
+    <p>(The correct answer is the first one!)</p>
+</div>
+
+<h2>Phase 1: Define the Problem</h2>
+<p>In the first phase, engineers clearly identify what problem needs to be solved. This might involve:</p>
+<ul>
+    <li>Being assigned a specific problem to work on</li>
+    <li>Observing the world around them to identify needs</li>
+    <li>Talking with potential users to understand their challenges</li>
+</ul>
+
+<div class="image-container">
+    <img src="defining_the_problem.jpg" alt="Engineers Defining a Problem">
+    <p class="image-caption">Engineers discussing and defining a problem before beginning to design solutions</p>
+</div>
+
+<p>Two critical components of problem definition are understanding the criteria and constraints:</p>
+
+<div class="key-terms">
+    <p><span class="key-term">Design criteria:</span> The requirements needed to be met in order for the design idea to be considered a success.</p>
+    <p><span class="key-term">Design constraints:</span> The limitations that are placed on the design idea, such as cost, materials, time, or other restrictions.</p>
+</div>
+
+<div class="example">
+    <h3>Example: Water Filtration System</h3>
+    <p>Imagine engineers designing a water filtration system for a rural community:</p>
+    <p><strong>Criteria (requirements for success):</strong></p>
+    <ul>
+        <li>Must remove 99% of harmful bacteria</li>
+        <li>Must filter at least 100 gallons per day</li>
+        <li>Must be easy to use without special training</li>
+    </ul>
+    <p><strong>Constraints (limitations):</strong></p>
+    <ul>
+        <li>Must cost less than $200 to build</li>
+        <li>Must use locally available materials</li>
+        <li>Must operate without electricity</li>
+        <li>Must be completed within 6 months</li>
+    </ul>
+</div>
+
+<div class="activity">
+    <h3>Try It Yourself: Identifying Criteria and Constraints</h3>
+    <p>Think about designing a solar-powered device to charge phones in areas without electricity. What might be some criteria and constraints?</p>
+    <p>Criteria might include: charges phones fully in less than 4 hours, works in partial sunlight, charges multiple devices simultaneously.</p>
+    <p>Constraints might include: must cost less than $50, must weigh less than 2 pounds, must be waterproof, must use available materials.</p>
+</div>
+
+<h2>Phase 2: Develop Ideas</h2>
+<p>Once the problem is clearly defined, engineers begin developing possible solutions. This phase includes several activities:</p>
+
+<div class="image-container">
+    <img src="brainstorming_researching_developing_solutions.jpg" alt="Engineers Brainstorming and Developing Solutions">
+    <p class="image-caption">Engineers brainstorming and researching to develop potential solutions</p>
+</div>
+
+<h3>Brainstorming</h3>
+<div class="key-terms">
+    <p><span class="key-term">Brainstorming:</span> An informal, creative process used to generate ideas without judgment.</p>
+</div>
+<p>During brainstorming, engineers:</p>
+<ul>
+    <li>Work individually or in groups</li>
+    <li>Sketch and label diagrams</li>
+    <li>Take notes about potential solutions</li>
+    <li>Document all ideas without evaluating them (no idea is a "bad" idea during brainstorming!)</li>
+</ul>
+
+<h3>Research</h3>
+<div class="key-terms">
+    <p><span class="key-term">Research:</span> The gathering of information about ideas related to an engineering solution.</p>
+</div>
+<p>Research activities might include:</p>
+<ul>
+    <li>Using online or print resources</li>
+    <li>Testing materials</li>
+    <li>Interviewing experts or potential users</li>
+    <li>Investigating existing solutions to similar problems</li>
+</ul>
+<p>Engineers often move back and forth between brainstorming and research, using new information to inspire more ideas.</p>
+
+<h3>Developing Solution Models</h3>
+<p>After brainstorming and research, engineers develop more detailed models of potential solutions:</p>
+<ul>
+    <li>Drawing detailed sketches with labels</li>
+    <li>Creating flowcharts showing inputs, outputs, and energy flow</li>
+    <li>Developing Computer-Aided Design (CAD) models</li>
+</ul>
+
+<div class="image-container">
+    <img src="engineer_working_on_CAD_model.jpg" alt="Engineer Working on CAD Model">
+    <p class="image-caption">An engineer developing a detailed Computer-Aided Design (CAD) model</p>
+</div>
+
+<div class="key-terms">
+    <p><span class="key-term">Computer-Aided Design (CAD):</span> Software used to create precise 3D models showing how parts of a system move and interact.</p>
+</div>
+
+<div class="checkpoint">
+    <h3>Quick Check!</h3>
+    <p>What is the primary purpose of brainstorming in engineering design?</p>
+    <ul>
+        <li>To generate many ideas without judging them</li>
+        <li>To select the final design solution</li>
+        <li>To test prototypes</li>
+        <li>To document final results</li>
+    </ul>
+    <p>(The correct answer is the first one!)</p>
+</div>
+
+<h2>Phase 3: Optimize the Design Solution</h2>
+<p>In the final phase, engineers build, test, and improve their design solutions.</p>
+
+<div class="image-container">
+    <img src="optimize_the_design_solution.jpg" alt="Engineers Optimizing Design Solution">
+    <p class="image-caption">Engineers testing and refining a prototype during the optimization phase</p>
+</div>
+
+<h3>Prototyping</h3>
+<div class="key-terms">
+    <p><span class="key-term">Prototype:</span> A first, or preliminary, model built to demonstrate and test the functionality of a design solution.</p>
+</div>
+<p>Prototypes allow engineers to:</p>
+<ul>
+    <li>Test if the design works as intended</li>
+    <li>Identify problems or weaknesses</li>
+    <li>Collect data on performance</li>
+    <li>Show the design to potential users for feedback</li>
+</ul>
+
+<h3>Testing and Optimizing</h3>
+<div class="key-terms">
+    <p><span class="key-term">Optimizing design solutions:</span> The continual process of testing and improving a design solution.</p>
+</div>
+<p>During optimization, engineers:</p>
+<ul>
+    <li>Perform tests to see how well the design meets the criteria</li>
+    <li>Collect and analyze data</li>
+    <li>Identify ways to improve the design</li>
+    <li>Make changes and test again</li>
+    <li>Repeat until the design successfully meets all criteria within the constraints</li>
+</ul>
+
+<div class="example">
+    <h3>Example: Electric Vehicle Design</h3>
+    <p>Engineers designing an electric vehicle might optimize their design by:</p>
+    <ol>
+        <li>Building a prototype and testing its range on a single charge</li>
+        <li>Analyzing data and discovering the battery loses efficiency in cold temperatures</li>
+        <li>Redesigning the battery insulation system</li>
+        <li>Testing the new design in different temperature conditions</li>
+        <li>Further refining the design based on new test results</li>
+        <li>Continuing this cycle until the vehicle meets all criteria (range, speed, safety) within constraints (cost, weight, manufacturing capabilities)</li>
+    </ol>
+</div>
+
+<div class="reflection">
+    <h3>Think About It</h3>
+    <p>Why is optimization so important in engineering design? Consider what might happen if engineers simply built their first design idea without going through multiple testing and improvement cycles.</p>
+</div>
+
+<h2>Using Criteria and Constraints Throughout the Process</h2>
+<p>Criteria and constraints play a crucial role throughout the entire engineering design process:</p>
+<ul>
+    <li><strong>During problem definition:</strong> They help clarify exactly what the solution needs to accomplish and within what limitations.</li>
+    <li><strong>During idea development:</strong> They guide brainstorming and help engineers focus on feasible solutions.</li>
+    <li><strong>During optimization:</strong> They provide the standards against which designs are tested and evaluated.</li>
+    <li><strong>When comparing competing designs:</strong> They help engineers decide which solution is best.</li>
+</ul>
+
+<div class="activity">
+    <h3>Scenario Analysis: Bridge Design</h3>
+    <p>A community needs a new bridge across a river. Consider these factors and determine which are criteria and which are constraints:</p>
+    <ul>
+        <li>Must support vehicles up to 40 tons (Criterion)</li>
+        <li>Budget of $2 million (Constraint)</li>
+        <li>Must be completed within 18 months (Constraint)</li>
+        <li>Must withstand flooding (Criterion)</li>
+        <li>Cannot disturb protected wildlife habitat (Constraint)</li>
+        <li>Must include pedestrian walkway (Criterion)</li>
+    </ul>
+</div>
+
+<h2>Real-World Applications of the Engineering Design Process</h2>
+<p>The engineering design process is used in countless fields to solve a wide variety of problems:</p>
+
+<h3>Environmental Engineering</h3>
+<p>Environmental engineers might use the process to:</p>
+<ul>
+    <li>Design systems to reduce plastic waste in oceans</li>
+    <li>Create more efficient recycling processes</li>
+    <li>Develop flood prevention systems</li>
+    <li>Design water purification solutions</li>
+</ul>
+
+<h3>Biomedical Engineering</h3>
+<p>Biomedical engineers might use the process to:</p>
+<ul>
+    <li>Create new medical devices for surgery</li>
+    <li>Design prosthetic limbs</li>
+    <li>Develop diagnostic equipment</li>
+    <li>Create drug delivery systems</li>
+</ul>
+
+<h3>Civil Engineering</h3>
+<p>Civil engineers might use the process to:</p>
+<ul>
+    <li>Design earthquake-resistant buildings</li>
+    <li>Create energy-efficient structures</li>
+    <li>Develop transportation systems</li>
+    <li>Design water management infrastructure</li>
+</ul>
+
+<div class="example">
+    <h3>Case Study: Waste Management Solution</h3>
+    <p>Engineers designing a new waste management system for a city would need to consider multiple stakeholder perspectives:</p>
+    <ul>
+        <li><strong>Environmental:</strong> Minimize pollution and ecological impact</li>
+        <li><strong>Economic:</strong> Keep costs affordable for the city and residents</li>
+        <li><strong>Social:</strong> Ensure the system is convenient and acceptable to residents</li>
+        <li><strong>Technical:</strong> Ensure the system can handle the volume and types of waste generated</li>
+    </ul>
+    <p>Success criteria would need to balance all these perspectives, while constraints might include available land, budget limitations, and existing infrastructure.</p>
+</div>
+
+<h2>Summary: Key Points About the Engineering Design Process</h2>
+<div class="key-terms">
+    <ul>
+        <li>The engineering design process has three main phases: define the problem, develop ideas, and optimize the design solution.</li>
+        <li>The process is iterative - engineers repeat steps and move back and forth between phases as needed.</li>
+        <li>Design criteria are the requirements that must be met for success.</li>
+        <li>Design constraints are the limitations placed on the solution.</li>
+        <li>Brainstorming generates ideas without judgment.</li>
+        <li>Research gathers information to enhance understanding and inspire solutions.</li>
+        <li>Prototypes are preliminary models built to test functionality.</li>
+        <li>Optimization involves repeated testing and improving of designs.</li>
+        <li>Engineers consider multiple perspectives and stakeholder needs when defining problems and evaluating solutions.</li>
+    </ul>
+</div>
+
+<div class="reflection">
+    <h3>Final Reflection</h3>
+    <p>Think about a problem in your school or community that could be solved using the engineering design process. What would be some criteria and constraints? What research would you need to do? How would you test and optimize possible solutions?</p>
+</div>
+
+<div class="checkpoint">
+    <h3>Checking Your Understanding</h3>
+    <p>1. What are the three main phases of the engineering design process?</p>
+    <p>2. What is the difference between criteria and constraints?</p>
+    <p>3. Why is the engineering design process considered iterative?</p>
+    <p>4. What is the purpose of a prototype?</p>
+    <p>5. How do engineers optimize their design solutions?</p>
+</div>
+</body>
+</html>
