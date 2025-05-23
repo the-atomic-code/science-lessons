@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Food Webs and Energy Flow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5px;
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0f8ff 100%);
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(45deg, #2e8b57, #32cd32);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #32cd32;
+        }
+        
+        .concept-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #f39c12;
+        }
+        
+        .energy-flow {
+            background: linear-gradient(135deg, #d1ecf1 0%, #a8e6cf 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #17a2b8;
+        }
+        
+        .example-box {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .activity {
+            background: linear-gradient(135deg, #e2e3e5 0%, #d6d8db 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #6c757d;
+        }
+        
+        .highlight {
+            background: yellow;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .vocab-term {
+            color: #2e8b57;
+            font-weight: bold;
+        }
+        
+        h1 { color: white; font-size: 2.5em; margin-bottom: 10px; }
+        h2 { color: #2e8b57; border-bottom: 2px solid #32cd32; padding-bottom: 5px; }
+        h3 { color: #1e7e34; margin-top: 20px; }
+        
+        .arrow {
+            display: inline-block;
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin: 0 10px;
+        }
+        
+        .energy-chain {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+            padding: 15px;
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        ul li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .interactive-note {
+            background: #e8f4fd;
+            border: 2px dashed #3498db;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .image-container img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .image-caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #495057;
+            font-size: 0.9em;
+        }
+        
+        .dual-image {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .dual-image .image-container {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .dual-image {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌱 Food Webs and Energy Flow 🦁</h1>
+        <p>Discover how energy travels from the sun through all living things!</p>
+    </div>
+
+    <div class="section">
+        <h2>🌞 The Ultimate Energy Source: Our Sun</h2>
+        <div class="concept-box">
+            <h3>Where Does All Energy Come From?</h3>
+            <p>Every single bit of energy that powers life on Earth comes from one amazing source: <span class="highlight">the sun!</span> Think about it - when you run, jump, or even just sit and think, the energy your body is using originally came from sunlight millions of miles away.</p>
+            
+            <div class="image-container">
+                <img src="flow_of_energy_sun_to_humans.jpg" alt="Flow of energy from sun to humans">
+                <div class="image-caption">See how energy flows from the sun through plants and animals all the way to humans!</div>
+            </div>
+            
+            <div class="energy-chain">
+                ☀️ Sun → 🌱 Plants → 🐰 Animals → 🦁 Predators
+            </div>
+            
+            <p>But how does this incredible journey work? Let's follow the path of energy through nature!</p>
+        </div>
+        
+        <div class="energy-flow">
+            <h3>The Solar Energy Journey</h3>
+            <p><strong>Step 1:</strong> The sun radiates enormous amounts of energy as light and heat.</p>
+            <p><strong>Step 2:</strong> Plants capture this solar energy through their leaves using a process called <span class="vocab-term">photosynthesis</span>.</p>
+            <p><strong>Step 3:</strong> Plants convert sunlight, water, and carbon dioxide into sugar (food) and oxygen.</p>
+            <p><strong>Step 4:</strong> This stored energy in plants becomes available to all other living things!</p>
+            
+            <div class="image-container">
+                <img src="food_chain_flow_of_energy.jpg" alt="Flow of energy through food chain">
+                <div class="image-caption">This diagram shows how energy flows through each level of a food chain, with some energy being lost as heat at each step.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🌿 Producers: The Energy Makers</h2>
+        <div class="concept-box">
+            <h3>What Makes Plants So Special?</h3>
+            <p>Plants are called <span class="vocab-term">producers</span> because they are the only living things that can make their own food! They don't need to eat other organisms - they create their own energy-rich food using:</p>
+            <ul>
+                <li>🌞 <strong>Sunlight</strong> - The energy source</li>
+                <li>💧 <strong>Water</strong> - Absorbed through roots</li>
+                <li>🌬️ <strong>Carbon dioxide</strong> - Taken from the air</li>
+                <li>🍃 <strong>Chlorophyll</strong> - The green chemical that captures light</li>
+            </ul>
+        </div>
+        
+        <div class="example-box">
+            <h3>🌳 Real-World Example</h3>
+            <p>A mighty oak tree starts as a tiny acorn. As it grows into a massive tree, where does all that wood, bark, and leaves come from? Most people think it comes from the soil, but amazingly, most of the tree's mass actually comes from carbon dioxide in the air, powered by energy from the sun!</p>
+        </div>
+        
+        <div class="interactive-note">
+            <strong>Think About This:</strong> Right now, as you read this, plants all around the world are busy capturing sunlight and turning it into food. Every leaf is like a tiny solar panel working to power the entire web of life!
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🐰 Consumers: The Energy Users</h2>
+        <div class="concept-box">
+            <h3>Why Animals Need to Eat</h3>
+            <p>Unlike plants, animals are <span class="vocab-term">consumers</span> because they cannot make their own food. They must consume (eat) other living things to get energy and building materials for their bodies.</p>
+            
+            <h4>What Do Animals Use Food Energy For?</h4>
+            <ul>
+                <li>🏃 <strong>Movement:</strong> Running, swimming, flying, or walking</li>
+                <li>🌡️ <strong>Body warmth:</strong> Maintaining proper body temperature</li>
+                <li>💪 <strong>Growth:</strong> Building new muscles, bones, and tissues</li>
+                <li>🩹 <strong>Repair:</strong> Healing cuts, growing new fur, or replacing old cells</li>
+                <li>🧠 <strong>Thinking:</strong> Powering the brain and nervous system</li>
+                <li>❤️ <strong>Life functions:</strong> Breathing, heartbeat, and digestion</li>
+            </ul>
+        </div>
+        
+        <div class="energy-flow">
+            <h3>Types of Consumers</h3>
+            <p><strong>🌱 Herbivores (Primary Consumers):</strong> Animals that eat only plants</p>
+            <ul><li>Examples: Rabbits, deer, zebras, elephants, many insects</li></ul>
+            
+            <p><strong>🥩 Carnivores (Secondary/Tertiary Consumers):</strong> Animals that eat other animals</p>
+            <ul><li>Examples: Lions, wolves, hawks, sharks, snakes</li></ul>
+            
+            <p><strong>🍽️ Omnivores:</strong> Animals that eat both plants and animals</p>
+            <ul><li>Examples: Bears, humans, pigs, raccoons</li></ul>
+        </div>
+        
+        <div class="example-box">
+            <h3>🔥 Energy in Action</h3>
+            <p>Did you know that right now, as you sit reading this, your body is burning food energy to keep you warm? You're literally like a gentle fire, constantly converting food into heat energy. That's why you need to eat regularly - you're always using up energy!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔗 Food Chains: Simple Energy Paths</h2>
+        <div class="concept-box">
+            <h3>Following a Single Path</h3>
+            <p>A <span class="vocab-term">food chain</span> shows a simple, straight-line path of who eats whom. It's like following a single trail of energy through nature.</p>
+            
+            <div class="image-container">
+                <img src="food_chain_example.jpg" alt="Example of a food chain">
+                <div class="image-caption">This food chain clearly shows the linear path of energy transfer from plants through different animals.</div>
+            </div>
+            
+            <div class="energy-chain">
+                🌱 Grass <span class="arrow">→</span> 🐰 Rabbit <span class="arrow">→</span> 🦊 Fox <span class="arrow">→</span> 🦅 Eagle
+            </div>
+            
+            <p>In this chain:</p>
+            <ul>
+                <li>Grass captures sun energy through photosynthesis</li>
+                <li>Rabbit eats grass and gets that stored energy</li>
+                <li>Fox eats rabbit and receives the energy</li>
+                <li>Eagle eats fox and gets the energy passed along</li>
+            </ul>
+        </div>
+        
+        <div class="energy-flow">
+            <h3>Why Food Chains Are Usually Short</h3>
+            <p>Most food chains have only 4-5 steps. Why? Because <span class="highlight">energy is lost at each step!</span></p>
+            
+            <p><strong>The Energy Loss Rule:</strong> Every time one animal eats another, about 90% of the energy is "lost" as:</p>
+            <ul>
+                <li>🔥 Heat energy (keeping the animal warm)</li>
+                <li>🏃 Movement energy (running, breathing, pumping blood)</li>
+                <li>🗑️ Waste products (what the body can't use)</li>
+            </ul>
+            
+            <p>Only about 10% of the energy gets stored in the animal's body for the next consumer to use!</p>
+        </div>
+        
+        <div class="activity">
+            <h3>🎯 Energy Transfer Challenge</h3>
+            <p><strong>Imagine this scenario:</strong> A sunflower captures 1000 units of energy from the sun. A mouse eats the sunflower seeds and gets 100 units. A snake eats the mouse and gets 10 units. A hawk eats the snake and gets 1 unit.</p>
+            <p><strong>See the pattern?</strong> Each step keeps only 10% of the energy from the previous step. This is why there can't be too many steps in a food chain - there wouldn't be enough energy left!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🕸️ Food Webs: The Real Picture</h2>
+        <div class="concept-box">
+            <h3>Life is More Complex Than Simple Chains</h3>
+            <p>In real life, most animals eat many different things, and most animals are eaten by several different predators. A <span class="vocab-term">food web</span> shows all these interconnected feeding relationships - it's like a map of who eats whom in nature!</p>
+            
+            <div class="image-container">
+                <img src="food_web.jpg" alt="Complex food web diagram">
+                <div class="image-caption">Notice how complex a real food web is! The arrows show energy flowing in many different directions, creating an intricate network of feeding relationships.</div>
+            </div>
+            
+            <p><strong>Why Food Webs Are Better Than Food Chains:</strong></p>
+            <ul>
+                <li>🔄 They show the real complexity of nature</li>
+                <li>🛡️ They reveal how ecosystems stay stable</li>
+                <li>🔗 They demonstrate all the connections between species</li>
+                <li>⚖️ They help us understand balance in nature</li>
+            </ul>
+        </div>
+        
+        <div class="example-box">
+            <h3>🦓 African Savanna Example</h3>
+            <p>Think about a zebra in Africa:</p>
+            <ul>
+                <li><strong>What it eats:</strong> Grass, leaves, bark from acacia trees</li>
+                <li><strong>What eats it:</strong> Lions, cheetahs, hyenas, wild dogs</li>
+                <li><strong>Competition:</strong> Shares food with giraffes, elephants, wildebeest</li>
+                <li><strong>Energy source:</strong> All the plant energy originally came from the sun!</li>
+            </ul>
+            <p>This creates a complex web of relationships, not just a simple chain.</p>
+        </div>
+        
+        <div class="interactive-note">
+            <strong>Arrows in Food Webs:</strong> The arrows always point in the direction energy flows. So an arrow from grass to a zebra means "energy flows from grass to zebra when the zebra eats the grass."
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>👑 Apex Predators: Kings and Queens of the Food Web</h2>
+        <div class="concept-box">
+            <h3>At the Top of the Energy Pyramid</h3>
+            <p>An <span class="vocab-term">apex predator</span> is an animal that sits at the very top of the food web. As adults, they are not regularly hunted or eaten by any other animals. They are the ultimate consumers!</p>
+            
+            <div class="image-container">
+                <img src="great_horned_owl.jpg" alt="Great horned owl as apex predator">
+                <div class="image-caption">The great horned owl is a perfect example of an apex predator - with powerful talons, excellent night vision, and silent flight, it sits at the top of its food web.</div>
+            </div>
+            
+            <p><strong>Examples of Apex Predators:</strong></p>
+            <ul>
+                <li>🦁 Lions (on land in Africa)</li>
+                <li>🦅 Great horned owls (in many forests)</li>
+                <li>🦈 Great white sharks (in the ocean)</li>
+                <li>🐻 Polar bears (in the Arctic)</li>
+                <li>🐊 Crocodiles (in rivers and swamps)</li>
+            </ul>
+        </div>
+        
+        <div class="energy-flow">
+            <h3>Why Apex Predators Need So Much Space</h3>
+            <p>Remember the energy loss rule? By the time energy reaches apex predators, there's very little left. This means:</p>
+            <ul>
+                <li>🏠 They need huge territories to find enough food</li>
+                <li>🔢 There are always fewer apex predators than their prey</li>
+                <li>⚖️ They help keep prey populations in balance</li>
+                <li>🌍 They need healthy ecosystems to survive</li>
+            </ul>
+        </div>
+        
+        <div class="activity">
+            <h3>🎯 Population Pyramid Activity</h3>
+            <p><strong>Think about this:</strong> In a healthy ecosystem, you might find:</p>
+            <ul>
+                <li>1 million plants</li>
+                <li>100,000 herbivores (like rabbits)</li>
+                <li>10,000 small carnivores (like foxes)</li>
+                <li>1,000 large carnivores (like wolves)</li>
+                <li>10 apex predators (like bears)</li>
+            </ul>
+            <p>This pyramid shape happens because of energy loss at each level!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>♻️ Decomposers: The Recycling Crew</h2>
+        <div class="concept-box">
+            <h3>Nature's Clean-Up Team</h3>
+            <p><span class="vocab-term">Decomposers</span> are the unsung heroes of every ecosystem. They break down dead plants and animals, returning nutrients to the soil so the energy cycle can start all over again!</p>
+            
+            <div class="dual-image">
+                <div class="image-container">
+                    <img src="decomposers_earthworms.jpg" alt="Earthworms as decomposers">
+                    <div class="image-caption">Earthworms are excellent decomposers that eat dead plant material and turn it into rich soil nutrients.</div>
+                </div>
+                <div class="image-container">
+                    <img src="decomposers.jpg" alt="Various decomposers at work">
+                    <div class="image-caption">Many different organisms work together as decomposers in nature's recycling system.</div>
+                </div>
+            </div>
+            
+            <p><strong>Main Types of Decomposers:</strong></p>
+            <ul>
+                <li>🦠 <strong>Bacteria:</strong> Microscopic organisms that break down dead matter</li>
+                <li>🍄 <strong>Fungi:</strong> Including mushrooms, molds, and yeasts</li>
+                <li>🪱 <strong>Earthworms:</strong> Eat dead plant material and enrich soil</li>
+                <li>🐛 <strong>Insects:</strong> Many beetles, flies, and other bugs</li>
+            </ul>
+        </div>
+        
+        <div class="energy-flow">
+            <h3>Completing the Energy Circle</h3>
+            <p>Decomposers are crucial because they:</p>
+            <ul>
+                <li>🔄 Recycle nutrients back to the soil</li>
+                <li>🧹 Clean up dead material (imagine if nothing ever decomposed!)</li>
+                <li>🌱 Make nutrients available for plants to use again</li>
+                <li>⚖️ Keep ecosystems healthy and balanced</li>
+            </ul>
+            
+            <div class="image-container">
+                <img src="Decomposers_Breaking_Down_Organic_Matter.jpg" alt="Decomposers breaking down organic matter">
+                <div class="image-caption">This detailed view shows how decomposers work to break down dead organic matter, turning it into nutrients that plants can use.</div>
+            </div>
+            
+            <div class="energy-chain">
+                ☀️ Sun → 🌱 Plants → 🐰 Animals → 💀 Death → 🦠 Decomposers → 🌱 Plants (and the cycle continues!)
+            </div>
+        </div>
+        
+        <div class="example-box">
+            <h3>🍂 Forest Floor Mystery</h3>
+            <p>Have you ever wondered why forests aren't piled high with dead leaves and fallen trees from hundreds of years? It's because decomposers are constantly at work, breaking everything down and returning nutrients to feed new plants!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⚖️ Balance in Nature</h2>
+        <div class="concept-box">
+            <h3>Why Every Species Matters</h3>
+            <p>Food webs show us that every living thing is connected. When one species is removed or becomes too numerous, it affects the entire web of relationships.</p>
+        </div>
+        
+        <div class="example-box">
+            <h3>🐺 The Wolf Story</h3>
+            <div class="image-container">
+                <img src="white_wolf_in_forest.jpg" alt="White wolf in forest">
+                <div class="image-caption">Wolves are keystone species - their presence or absence dramatically affects entire ecosystems.</div>
+            </div>
+            
+            <p><strong>What happens when apex predators disappear?</strong></p>
+            <p>Imagine wolves are removed from a forest:</p>
+            <ul>
+                <li>🦌 Deer populations explode (no predators to control them)</li>
+                <li>🌱 Plants get overeaten (too many deer grazing)</li>
+                <li>🦅 Birds lose nesting sites (plants disappear)</li>
+                <li>🐰 Small animals lose food and shelter</li>
+                <li>🌊 Even rivers can change (without plants to hold soil)</li>
+            </ul>
+            <p>One missing predator affects the entire ecosystem!</p>
+        </div>
+        
+        <div class="activity">
+            <h3>🎯 Ecosystem Balance Challenge</h3>
+            <p><strong>Consider these scenarios:</strong></p>
+            <ol>
+                <li>What would happen if all the decomposers suddenly disappeared?</li>
+                <li>How would removing all plants affect every other organism?</li>
+                <li>Why do farmers sometimes introduce certain predators to control pest insects?</li>
+            </ol>
+            <p>Think about how energy flow and population control work together!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🌡️ Energy for Life Functions</h2>
+        <div class="concept-box">
+            <h3>How Animals Use Food Energy Every Second</h3>
+            <p>Every living animal is constantly using energy for survival. Here's what happens to the energy from food:</p>
+        </div>
+        
+        <div class="energy-flow">
+            <h3>Essential Energy Uses</h3>
+            <p><strong>🌡️ Maintaining Body Temperature:</strong></p>
+            <ul>
+                <li>Warm-blooded animals burn food to stay warm</li>
+                <li>This is happening in your body right now!</li>
+                <li>In cold weather, animals need even more food energy</li>
+            </ul>
+            
+            <p><strong>🏃 Movement and Activity:</strong></p>
+            <ul>
+                <li>Every muscle contraction uses energy</li>
+                <li>Flying, swimming, and running require lots of energy</li>
+                <li>Even small movements like blinking use energy</li>
+            </ul>
+            
+            <p><strong>💪 Growth and Repair:</strong></p>
+            <ul>
+                <li>Building new muscle, bone, and skin</li>
+                <li>Healing wounds and replacing old cells</li>
+                <li>Growing new fur, feathers, or scales</li>
+            </ul>
+        </div>
+        
+        <div class="example-box">
+            <h3>🐻 Bear Hibernation Example</h3>
+            <p>Before winter, bears eat enormous amounts of food to build up fat stores. During hibernation, they slowly burn this stored energy to:</p>
+            <ul>
+                <li>Keep their body temperature from dropping too low</li>
+                <li>Power their slow heartbeat and breathing</li>
+                <li>Maintain basic life functions for months</li>
+            </ul>
+            <p>All this energy originally came from the sun through the plants and animals the bear ate!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔍 Tracing Energy Back to the Sun</h2>
+        <div class="activity">
+            <h3>🎯 Energy Detective Challenges</h3>
+            
+            <div class="example-box">
+                <h4>🦅 Challenge 1: The Flying Eagle</h4>
+                <p>An eagle soars high above a lake, using energy to flap its wings and maintain body heat. Trace this energy back to the sun:</p>
+                <ul>
+                    <li>Eagle uses muscle energy to fly</li>
+                    <li>Eagle ate a fish to get that energy</li>
+                    <li>Fish ate smaller fish and aquatic insects</li>
+                    <li>Those organisms ate algae and water plants</li>
+                    <li>Plants used photosynthesis to capture sun energy</li>
+                    <li><strong>Original source: THE SUN! ☀️</strong></li>
+                </ul>
+            </div>
+            
+            <div class="example-box">
+                <h4>🦁 Challenge 2: The Hunting Lion</h4>
+                <p>A lion uses energy to chase and catch a zebra. Where did this energy originally come from?</p>
+                <ul>
+                    <li>Lion's muscle energy came from eating meat</li>
+                    <li>The meat was from a zebra</li>
+                    <li>Zebra got energy from eating grass</li>
+                    <li>Grass captured energy from sunlight</li>
+                    <li><strong>Original source: THE SUN! ☀️</strong></li>
+                </ul>
+            </div>
+            
+            <div class="example-box">
+                <h4>🐍 Challenge 3: The Growing Snake</h4>
+                <p>A snake uses energy to grow new skin and shed its old skin. Trace this energy:</p>
+                <ul>
+                    <li>Snake uses energy to build new cells</li>
+                    <li>Energy came from eating a mouse</li>
+                    <li>Mouse got energy from eating seeds</li>
+                    <li>Seeds stored energy from the parent plant</li>
+                    <li>Plant made food using sunlight</li>
+                    <li><strong>Original source: THE SUN! ☀️</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📚 Key Vocabulary Review</h2>
+        <div class="concept-box">
+            <h3>Essential Terms to Remember</h3>
+            
+            <p><strong class="vocab-term">Food Chain:</strong> A sequence of living things where each one feeds on the organism below it</p>
+            
+            <p><strong class="vocab-term">Food Web:</strong> A model made of intersecting food chains showing all feeding relationships</p>
+            
+            <p><strong class="vocab-term">Photosynthesis:</strong> Process by which plants use sunlight to make sugar from carbon dioxide and water</p>
+            
+            <p><strong class="vocab-term">Producer:</strong> A living thing (usually a plant) that makes its own food using sun energy</p>
+            
+            <p><strong class="vocab-term">Consumer:</strong> A living thing that must eat other organisms to get energy</p>
+            
+            <p><strong class="vocab-term">Apex Predator:</strong> An animal at the top of the food web that isn't eaten by other animals</p>
+            
+            <p><strong class="vocab-term">Decomposer:</strong> Living things that break down dead organisms and recycle nutrients</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Test Your Understanding</h2>
+        <div class="activity">
+            <h3>Quick Check Questions</h3>
+            
+            <p><strong>1.</strong> Why do food chains usually have only 4-5 steps maximum?</p>
+            <p><strong>2.</strong> How is the energy a rabbit uses to hop around connected to the sun?</p>
+            <p><strong>3.</strong> What would happen to a food web if all the decomposers disappeared?</p>
+            <p><strong>4.</strong> Why do apex predators need larger territories than herbivores?</p>
+            <p><strong>5.</strong> Explain how a bear's body warmth in winter can be traced back to solar energy.</p>
+            
+            <div class="interactive-note">
+                <strong>Remember:</strong> Every question about energy in living things can ultimately be traced back to the sun. The sun is the power source for virtually all life on Earth!
+            </div>
+        </div>
+    </div>
+
+    <div class="header" style="margin-top: 40px;">
+        <h2>🌟 Congratulations! 🌟</h2>
+        <p>You now understand how energy flows through the amazing web of life on Earth. From the smallest bacteria to the mightiest predators, everything is connected through the endless flow of energy that began with our sun!</p>
+    </div>
+</body>
+</html>
