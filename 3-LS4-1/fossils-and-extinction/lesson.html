@@ -40,15 +40,16 @@
         }
         .fossil-image {
             max-width: 50%;
+            width: auto;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            margin: 15px 0;
+            margin: 15px auto;
             display: block;
         }
         .image-container {
             text-align: center;
-            margin: 25px 0;
+            margin: 25px auto;
             background: #F5F5DC;
             padding: 20px;
             border-radius: 12px;
@@ -60,17 +61,20 @@
             font-weight: bold;
             margin-top: 10px;
             font-size: 1.1em;
+            text-align: center;
         }
         .side-by-side {
             display: flex;
             gap: 20px;
             align-items: center;
+            justify-content: center;
             margin: 25px 0;
             flex-wrap: wrap;
         }
         .side-by-side .image-container {
             flex: 1;
             min-width: 300px;
+            max-width: 400px;
         }
         .fun-fact {
             background: #F0E68C;
@@ -141,6 +145,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin: 25px 0;
+            justify-items: center;
         }
         .comparison-box {
             background: #F0F8FF;
@@ -148,10 +153,16 @@
             border-radius: 10px;
             padding: 15px;
             text-align: center;
+            width: 100%;
+            max-width: 350px;
         }
         .comparison-box h4 {
             color: #4169E1;
             margin-top: 0;
+        }
+        .comparison-box .fossil-image {
+            max-width: 250px;
+            margin: 10px auto;
         }
     </style>
 </head>
